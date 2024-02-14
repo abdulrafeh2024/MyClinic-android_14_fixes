@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginLeft="10dp"
+    android:gravity="center"
+    android:layout_marginRight="10dp"
+    android:layoutDirection="locale"
+    android:orientation="horizontal"
+    android:weightSum="7"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/address_table_header" />
+
+    <!--   <com.telemedicine.myclinic.views.BoldTextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:gravity="start"
+           android:text="Action"
+           android:paddingStart="3dp"
+           android:paddingEnd="3dp"
+           android:textColor="@color/colorPrussianBlue"
+           android:textSize="14sp" />
+   -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:padding="2dp"
+            android:layout_gravity="start"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/ic_address_edit"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/address_table_header" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1"
+        android:gravity="start"
+        android:text="Delivered"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/address_table_header" />
+
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:text="Ar-Rob"
+        android:paddingStart="3dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingEnd="3dp"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/address_table_header" />
+
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1"
+        android:gravity="start"
+        android:text="JD-1"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/address_table_header" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="start"
+        android:text="055-555-5"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/address_table_header" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="start"
+        android:text="John D"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/address_table_header" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="start"
+        android:text="1"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/address_table_header" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

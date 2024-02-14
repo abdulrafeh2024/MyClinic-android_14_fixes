@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.telemedicine.myclinic.activities.HomeActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_with_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_below="@+id/toolbar">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:paddingTop="20dp"
+            android:paddingBottom="40dp"
+            app:centered="true"
+            app:fillColor="@color/colorPrimary"
+            app:pageColor="@color/colorGreyIndicator"
+            app:snap="false" />
+
+    </RelativeLayout>
+
+    <!--android:layout_above="@+id/reviewsLayout"-->
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/container"
+        android:layout_above="@id/bottom_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mainBtnsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="1dp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@color/color_dark_blue"
+                            android:gravity="center"
+                            android:onClick="onFindDoctor"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/ic_find_doctor"
+                                app:tint="@color/colorWhite" />
+
+                            <com.telemedicine.myclinic.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/find_doctor"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="10sp" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@color/color_dark_blue"
+                            android:gravity="center"
+                            android:onClick="LogOn"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/ic_logon"
+                                app:tint="@color/colorWhite" />
+
+                            <com.telemedicine.myclinic.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/login_register"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="10sp" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:onClick="DoctorsSpecialist"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@color/color_dark_blue"
+                            android:gravity="center_horizontal|bottom"
+                            android:orientation="horizontal"
+                            android:paddingBottom="20dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/ic_home_services"
+                                app:tint="@color/colorWhite" />
+
+                            <com.telemedicine.myclinic.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/home_services"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="10sp" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!--book now btn-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/book_now"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="2dp"
+                    app:cardBackgroundColor="@color/color_persian_green"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_persian_green"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_book_now"
+                            app:tint="@color/colorWhite" />
+
+                        <com.telemedicine.myclinic.views.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/book_now"
+                            android:textAllCaps="true"
+
+                            android:textColor="@color/colorWhite"
+                            android:textSize="10sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/reviewsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainBtnsLayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/testimonial" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:paddingTop="10dp"
+                    app:centered="true"
+                    app:fillColor="@color/colorPrimary"
+                    app:pageColor="@color/colorGreyIndicator"
+                    app:snap="false" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <ImageView
+                android:id="@+id/chevron_left"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/reviewsLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/grey_solid_white"
+                android:src="@drawable/chevron_left"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doctor_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviewsLayout"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toLeftOf="@+id/chevron_right"
+                android:layout_toRightOf="@+id/chevron_left"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/chevron_right"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviewsLayout"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/grey_solid_white"
+                android:src="@drawable/chevron_right"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+    <!-- bottom layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_dark_blue">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/find_clinic_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onFindClinic"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_location"
+                app:tint="@color/colorWhite" />
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/find_clinic"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/contact_us_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onContactUs"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_contact"
+                app:tint="@color/colorWhite" />
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/contact_us"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/animation_view"-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="70dp"-->
+<!--        android:onClick="openChatBot"-->
+<!--        android:visibility="visible"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_rawRes="@raw/chat_bot_siri" />-->
+
+    <RelativeLayout
+        android:id="@+id/chat_bot_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_trans"
+        android:onClick="openChatBotBg"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/chatBot_rounded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/white_round_corner" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/chat_bot_web_view"
+            android:layout_alignTop="@id/chat_bot_web_view"
+            android:layout_alignEnd="@+id/chat_bot_web_view"
+            android:layout_alignBottom="@id/chat_bot_web_view">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <WebView
+            android:id="@+id/chat_bot_web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"></WebView>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/book_now_trasparent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layoutDirection="locale"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--book now tele btn-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/book_now_tele"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:layoutDirection="locale"
+                android:elevation="2dp"
+                android:onClick="virtualBooking"
+                app:cardBackgroundColor="@color/color_persian_green"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="4dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_persian_green"
+                    android:gravity="center"
+                    android:layoutDirection="locale"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_book_now"
+                        app:tint="@color/colorWhite" />
+
+                    <com.telemedicine.myclinic.views.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/virtual_tv"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="9sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--book now tele btn-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/book_now_non_tele"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/book_now_tele"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layoutDirection="locale"
+                android:elevation="2dp"
+                android:onClick="outPatient"
+                app:cardBackgroundColor="@color/color_persian_green"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_persian_green"
+                    android:gravity="center"
+                    android:layoutDirection="locale"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/ic_book_now"
+                        app:tint="@color/colorWhite" />
+
+                    <com.telemedicine.myclinic.views.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/clinic_visit_tv"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="9sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

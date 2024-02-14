@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/red_round">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/close_ios" />
+
+        <com.telemedicine.myclinic.views.BoldTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/img"
+            android:text="@string/my_clininc"
+            android:textColor="@color/colorWhite" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_toLeftOf="@+id/img"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/textContact"
+            android:layout_below="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toLeftOf="@+id/img"
+            android:layout_marginBottom="8dp"
+            android:text="@string/if_you_need_more_assistance_please_contact_our_call_center_on_92_00_22_811"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

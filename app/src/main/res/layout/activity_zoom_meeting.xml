@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.telemedicine.myclinic.activities.ZoomMeetingActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/loadingLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/zoom_wait"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:text="@string/zoom_note"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:text="@string/zoom_disclaimer"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.telemedicine.myclinic.views.LightButton
+        android:id="@+id/joinAgain"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:onClick="joinAgain"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Join Meeting Again"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+ <!--   <Button
+        android:id="@+id/join_meeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

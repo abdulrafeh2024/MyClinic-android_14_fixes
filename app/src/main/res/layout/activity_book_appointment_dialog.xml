@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.telemedicine.myclinic.activities.BookAppointmentDialogActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="12dp"
+            android:background="#00000000">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:paddingBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:onClick="Close"
+                    android:src="@drawable/back_btn"
+                    android:visibility="gone" />
+
+                <com.telemedicine.myclinic.views.RegularTextView
+                    android:id="@+id/selection_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/back"
+                    android:gravity="center"
+                    android:text="@string/please_select_the_appointment_you_would_like_to_create"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <com.telemedicine.myclinic.views.LightTextView
+                    android:id="@+id/visit_clinic"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/selection_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:onClick="ClinicAppt"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/appointment_to_visit_the_clinic"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="11sp" />
+
+                <com.telemedicine.myclinic.views.LightTextView
+                    android:id="@+id/tele_appt_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/visit_clinic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:onClick="TeleAppt"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/tele_consult"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="anyRtl"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView_close"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="top|right"
+            android:clickable="true"
+            android:onClick="Close"
+            android:src="@drawable/error_1" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

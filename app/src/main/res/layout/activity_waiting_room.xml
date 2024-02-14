@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context="com.telemedicine.myclinic.vseeActivities.WaitingRoomActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/register_bg"
+        android:layoutDirection="ltr">
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:src="@drawable/offline" />
+
+        <LinearLayout
+            android:id="@+id/container_appoint_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <com.telemedicine.myclinic.views.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/waiting_room"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <com.telemedicine.myclinic.views.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:text="@string/your_doctor_will_contact_you_here_at_specified_appointment_time_please_wait"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/waiting_doctor_en"
+            layout="@layout/waiting_room_doctor_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_appoint_title" />
+
+        <include
+            android:id="@+id/waiting_doctor_ar"
+            layout="@layout/waiting_room_doctor_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_appoint_title" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/waiting_doctor_en"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:text=""
+            android:textColor="@color/colorBrightGrey"
+            android:textSize="14sp" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/apptNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTime"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apptNo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorLightGrey"
+            android:layoutDirection="ltr"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp">
+
+            <com.telemedicine.myclinic.views.LightButton
+                android:id="@+id/btn_home"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/back_to_home"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <com.telemedicine.myclinic.views.LightButton
+                android:id="@+id/test_connection"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_home"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/test_connection"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

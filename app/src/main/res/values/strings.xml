@@ -1,0 +1,675 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- These strings are only for our CUSTOM error activity, if you are using the default activity, they are not needed! -->
+
+    <string name="app_name">My Clinic</string>
+    <string name="choose_a_lanugage">Choose a language</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_account">Don\'t have an account</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="enter_your_email_below_to_reset_password">Enter your email below to reset password</string>
+    <string name="enter_registered_e_mail">Enter registered email</string>
+    <string name="create_your_to_book_your_appointment">CREATE AN ACCOUNT TO BOOK YOUR APPOINTMENT</string>
+    <string name="we_have_found_the_following_people_registered_under_this_mobile_number">We have found the following people registered under this mobile number!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="profile_created_successfully">You have created your account successfully.Please proceed to login to create your profile</string>
+    <string name="cityJeddah">Jeddah</string>
+    <string name="KSA">Saudi Arabia</string>
+    <string name="betaqa_no">Betaqa No</string>
+    <string name="betaqa">Betaqa</string>
+    <string name="Iqama">Iqama</string>
+    <string name="Passport">Passport</string>
+
+    <string name="required">Required *</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="Mr">Mr</string>
+    <string name="Mrs">Mrs</string>
+    <string name="Ms">Ms</string>
+    <string name="Miss">Miss</string>
+    <string name="Dr">Dr</string>
+
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+
+    <string name="national_id_exist">National Id Already Exist.</string>
+    <string name="please_select_the_appointment_you_would_like_to_create">Please select the appointment you would like to create</string>
+    <string name="appointment_to_visit_the_clinic">Appointment to visit the clinic</string>
+    <string name="tele_consult">Tele Consultation</string>
+    <string-array name="gender">
+        <item>@string/male</item>
+        <item>@string/Female</item>
+    </string-array>
+
+    <string-array name="salutation">
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Ms</item>
+        <item>Dr</item>
+    </string-array>
+
+    <string-array name="nationalId">
+        <item>Iqama</item>
+        <item>Passport</item>
+    </string-array>
+
+    <string-array name="Betaqa">
+        <item>Betaqa</item>
+    </string-array>
+
+
+    <!-- HyperPay Strings-->
+    <string name="checkout_ui_callback_scheme">myclinictele</string>
+
+    <string name="visa">VISA</string>
+
+    <string name="card_holder_hint">Card Holder</string>
+    <string name="card_number_hint">Card Number</string>
+    <string name="card_expiry_month_hint">MM</string>
+    <string name="card_expiry_year_hint">YY</string>
+    <string name="card_cvv_hint">CVV</string>
+    <string name="bankdetail">Please enter your card details.</string>
+    <string name="error_empty_fields">Please complete the missing fields.</string>
+    <string name="error_message">An error occurred</string>
+    <string name="date_delimiter">/</string>
+
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_pay_now">Pay Now</string>
+
+    <string name="progress_message_please_wait">Please wait…</string>
+    <string name="amount">Amount :</string>
+
+    <string name="success">000.000.000</string>
+    <string name="success1">000.000.100</string>
+    <string name="success2">000.100.110</string>
+    <string name="success3">000.100.111</string>
+    <string name="success4">000.100.112</string>
+    <string name="success5">000.300.000</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="check_in">Check-In</string>
+    <string name="api_key">AIzaSyAv-3OjerSZpRFmOlk6GFzumrM04X4vUfU</string>
+ <!--   AIzaSyBcyaiovf-EH0XIAIqtyWGMGrYg66bel94-->
+   <!-- AIzaSyDrAjBmEn_G4ZV9Nwm63t9bvHcE-y30WrY-->
+    <string name="home_visit_message">Thank you. Our team will contact you shortly to arrange for the home visit.</string>
+    <string name="my_clininc">My Clinic</string>
+    <string name="your_lab_queuing_ticket_no">Your Lab Queuing Ticket No.</string>
+    <string name="your_pharmacy_queuing_ticket_no">Your Pharmacy Queuing Ticket No.</string>
+    <string name="your_pre_auth_status">Your Pre-Auth Status</string>
+    <string name="select_other_days">Please select date between Sunday to Thursday.</string>
+    <string name="book">BOOK</string>
+    <string name="view">VIEW</string>
+    <string name="cancel_appointment">Are you sure you wish to cancel this appointment?</string>
+    <string name="m_clinic">My Clinic</string>
+    <string name="whatsapp"><u>050 122 8111</u></string>
+    <string name="home">Home</string>
+    <string name="about_us">About Us</string>
+    <string name="doctors_amp_specialities"><![CDATA[Doctors & Specialties]]></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="settings">Settings</string>
+    <string name="patient_digital_id">My Clinic Pass</string>
+    <string name="switch_language">Switch Language</string>
+
+    <string name="register_account">Register Account</string>
+    <string name="logon">Login</string>
+    <string name="device_type">20</string>
+    <string name="email">Email *</string>
+    <string name="password">Password *</string>
+    <string name="forgot">Forgot?</string>
+    <string name="remember_my_email">Remember my email</string>
+    <string name="please_enter_email">Please enter the email.</string>
+    <string name="please_enter_valid_email">Please enter valid email.</string>
+    <string name="technical_info">Technical Info :</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="fill_in_the_form_to_get_instant_access">Fill in the form to get instant access</string>
+    <string name="_1">1</string>
+    <string name="basic_details">Basic Details</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="register_your_account_through">Register your account through…</string>
+    <string name="or_sign_in_through">Or sign in through…</string>
+    <string name="or_set_your_password_and_register">Or set your password and register..</string>
+    <string name="_2">2</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="_3">3</string>
+    <string name="confirm">Confirm</string>
+    <string name="tell_us_who_you_are">Tell us who you are</string>
+    <string name="mobile_number">Enter Mobile Number *</string>
+    <string name="next">Next</string>
+    <string name="please_enter_the_verification_code">Enter the verification code received by SMS</string>
+    <string name="verification_code">Verification Code *</string>
+    <string name="set_password">Set Password *</string>
+    <string name="re_enter_password">Re-enter Password *</string>
+    <string name="you_can_resend_request_for_sms_after_119_secs">You can resend request for SMS after 60 secs</string>
+    <string name="resend">Resend</string>
+    <string name="verify">Verify</string>
+    <string name="name_en">Name(En)</string>
+    <string name="name_ar">Name(Ar)</string>
+    <string name="gender">Gender *</string>
+    <string name="dob">DOB</string>
+    <string name="please_enter_valid_number">Please enter the valid number.</string>
+    <string name="sms_count_msg">You can resend request for SMS after </string>
+    <string name="seconds"> Seconds</string>
+    <string name="limit_on_password">Password should be at least 6 characters in length and have at least one number in it.</string>
+    <string name="limit_on_password_6_chars">Please enter the minimum 6 character for password.</string>
+    <string name="password_should_same">Password and Re-enter Password should be same.</string>
+    <string name="please_select_your_profile_to_show">Please select your profile to show</string>
+    <string name="select">Select</string>
+    <string name="switch_profile">Switch Profile</string>
+    <string name="my_account">My Account</string>
+    <string name="add_patient">add patient</string>
+    <string name="log_out">Logout?</string>
+    <string name="follow_ups_available_0">Follow-Ups Available (0)</string>
+    <string name="upcoming_appointments">Upcoming Appointments</string>
+    <string name="past_appointments">Past Appointments</string>
+    <string name="centre_of_excellence">Centre of Excellence</string>
+    <string name="follow_up_without_zero">Follow-Ups Available </string>
+    <string name="exit">Do you want to Exit</string>
+    <string name="profile_completion_45">Profile Completion 45%</string>
+    <string name="complete_your_profile_to_book_appointments">Complete your profile to book appointments</string>
+    <string name="basic_information">Basic Information</string>
+    <string name="salutation">Salutation *</string>
+    <string name="first_name">First Name *</string>
+    <string name="middle_name">Middle Name *</string>
+    <string name="last_name">Last Name *</string>
+    <string name="date_of_birth">Date Of Birth *</string>
+    <string name="mrn">MRN</string>
+    <string name="city">City *</string>
+    <string name="district">District</string>
+    <string name="please_select_gender">Please select gender</string>
+    <string name="please_select_salutation">Please select salutation</string>
+    <string name="please_enter_first_name">Please enter First Name</string>
+    <string name="please_enter_middle_name">Please enter Middle Name</string>
+    <string name="please_enter_last_name">Please enter Last Name</string>
+    <string name="please_select_date_of_birth">Please select Date Of Birth</string>
+    <string name="please_select_city">Please select City</string>
+    <string name="profile_completion_70">Profile Completion 70%</string>
+    <string name="identity_information">Identity Information</string>
+    <string name="nationality">Nationality *</string>
+    <string name="national_id_type">National ID Type *</string>
+    <string name="national_id">National Id *</string>
+    <string name="national_id1">Iqama/Passport No *</string>
+    <string name="national_id_expiry_date">National ID Expiry Date *</string>
+    <string name="attach_photo">Add National Card</string>
+    <string name="insurance_information">Insurance Information</string>
+    <string name="are_you_a_insurance_holder">Are you a Insurance Holder?</string>
+    <string name="insurance_carrier">Insurance Carrier *</string>
+    <string name="insurance_expiry_date">Insurance Expiry Date *</string>
+    <string name="policy_no">Policy No *</string>
+    <string name="membership_id_number">Membership ID Number *</string>
+    <string name="carrier_name">Class/Plan *</string>
+    <string name="contract_name">Contract Name *</string>
+    <string name="attach_insurance_card">Attach Insurance Card</string>
+    <string name="i_agree_to_terms_amp_conditions">Please accept the terms and conditions.</string>
+    <string name="submit">Submit</string>
+    <string name="choose_image_media">Choose Image Media</string>
+    <string name="valid_betaqa">Betaqa/Iqama number is not valid.</string>
+    <string name="select_country">Please select country</string>
+    <string name="please_select_national_id">Please select National Id Type</string>
+    <string name="please_enter_national_id_no">Please enter National Id No</string>
+    <string name="mem_already_exist">Membership No Already Exist</string>
+    <string name="update">Update</string>
+    <string name="jeddah_nprince_sultan_st_al_mohammadiyah_dist">Jeddah\nPrince Sultan St. Al Mohammadiyah Dist.</string>
+    <string name="visit_us">Visit us</string>
+     <!--<string name="sunday_thursday_n9_00_am_09_00_pm">10:00 am - 4:00 pm\n10:00 pm - 2:00 am</string>-->
+    <string name="sunday_thursday_n9_00_am_09_00_pm">09:00 am - 09:00 pm</string>
+    <!-- <string name="sunday_thursday_n9_00_am_09_00_pm">Sunday - Thursday\n10:00 am - 4:00 pm\n10:00 pm - 2:00 am +1</string>-->
+    <string name="sat_sun">Sunday - Thursday</string>
+    <string name="saturday_n1_00_pm_09_00_pm">01:00 pm - 09:00 pm</string>
+
+ <!--    <string name="saturday_n1_00_pm_09_00_pm">12:00 pm - 4:00 pm\n10:00 pm - 2:00 am</string>-->
+    <string name="sat">Saturday</string>
+    <!-- <string name="saturday_n1_00_pm_09_00_pm">Saturday\n12:00 pm - 4:00 pm\n10:00 pm - 2:00 am +1</string>-->
+    <string name="friday_closed">Closed</string>
+    <string name="friday">Friday</string>
+    <string name="call_us">Call us</string>
+    <string name="email_us">Email us</string>
+    <string name="whatsapp_us">Whatsapp us</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="book_an_appointment">Book An appointment</string>
+    <string name="find_your_doctor">Find Your Doctor</string>
+    <string name="fill_in_the_form_below_to_book">Fill in the form below to book</string>
+    <string name="date_of_appointment">Date of Appointment *</string>
+    <string name="select_specialty">Select Specialty *</string>
+    <string name="select_date_of_appointment">Select Date of Appointment</string>
+    <string name="please_select_the_speciality">Please select the specialty.</string>
+    <string name="please_select_valid_speciality">Please select valid specialty.</string>
+    <string name="please_select_location">Please select the location.</string>
+    <string name="please_select_valid_doctor">Please select valid doctor.</string>
+    <string name="available_slots">Available Slots</string>
+    <string name="select_from_the_available_slots_below">Select from the available slots below</string>
+    <string name="change_date">Change Date</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="reschedule">Re-schedule</string>
+    <string name="reschedule_appointment">Reschedule Appointment</string>
+    <string name="please_select_the_time">Please select the time.</string>
+    <string name="sure_do_want_schedule">Are you sure , Do you want to Reschedule the appointment instead of!</string>
+    <string name="appt_reschedule_successfully">Appointment Rescheduled Successfully!</string>
+    <string name="registered_successfully">Congratulations! Your account has been successfully created! You can now login .</string>
+    <string name="appointment_details">Appointment Details</string>
+    <string name="review_your_schedule_and_confirm">Review your schedule and confirm</string>
+    <string name="confirm_amp_book"><![CDATA[Confirm & Book]]></string>
+    <string name="modify">Modify</string>
+    <string name="appt_booked_successfully">Appointment Booked Successfully!</string>
+    <string name="appointment_confirmed">Appointment Confirmed</string>
+    <string name="your_appointment_successfuly_booked">Your appointment successfuly booked</string>
+    <string name="pay_online">PAY ONLINE</string>
+    <string name="self_checkin">Self Check-In</string>
+    <string name="go_to_dashboard">Back to Home Page</string>
+    <string name="add_to_calendar">Add to Calendar</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="check_in_online">Kiosk Check-In</string>
+    <string name="price">Price :</string>
+    <string name="sar">SAR</string>
+    <string name="are_you_sure_cancel_the_apptment">Are you sure you wish to cancel this appointment?</string>
+    <string name="event_added_successfully">Event added successfully to your calendar.</string>
+    <string name="download_successfully">Report downloaded successfully.</string>
+    <string name="please_remember_to_arrive">.Please remember to arrive 15 minutes prior to your appointment time.</string>
+    <string name="has_an_appointment_with">has an appt with</string>
+    <string name="appointment_with">Appointment with</string>
+    <string name="at_my_clinic">at My Clinic</string>
+    <string name="at">at</string>
+    <string name="thank_you_for_payment">Payment successfully done. Thank you for your payment.</string>
+    <string name="waiting_room">Waiting Room</string>
+    <string name="your_doctor_will_contact_you_here_at_specified_appointment_time_please_wait">Your doctor will contact you here at specified appointment time.please wait</string>
+    <string name="back_to_home">Back To Home</string>
+    <string name="test_connection">Test Connection</string>
+    <string name="appointment_no">Appointment No :</string>
+    <string name="your_boarding_pass">Your Boarding PAss</string>
+    <string name="use_this_to_check_in_at_our_kiosks_in_the_clinic">Use this to check-in at our kiosks in the clinic</string>
+    <string name="appointment_date_amp_time"><![CDATA[Appointment Date & Time]]></string>
+    <string name="speciality">Specialty</string>
+    <string name="doctor">Doctor</string>
+    <string name="cash">Cash</string>
+    <string name="Self">Self</string>
+    <string name="are_you_sure_you_wish_to_pay_cash">Are you sure you wish to pay cash?</string>
+    <string name="health_card">health card</string>
+    <string name="are_you_sure_you_want_to_use_this_health_insurance_card">Are you sure you want to use this health insurance card?</string>
+    <string name="membership_number">Membership Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="insurance_provider">Insurance Provider</string>
+    <string name="axa_insurance">AXA Insurance</string>
+    <string name="policy_number">Policy Number</string>
+    <string name="we_have_not_found_any_upcoming_appointment">We have not found any upcoming appointments.</string>
+    <string name="the_cost_for_this_appt_will_be">The cost for this appointment will be </string>
+    <string name="you_will_need_a_credit_or_debit_card"> you will need a credit or debit card to continue.</string>
+    <string name="_continue">Continue</string>
+    <string name="appointment">Appointment</string>
+    <string name="follow_up_appointments">Follow Up Appointments</string>
+    <string name="previous_appt_was_on">Previous appointment was on </string>
+    <string name="we_have_not_found_any_past_appointment">We have not found any past appointment.</string>
+    <string name="view_services_and_orders">View Services and Orders </string>
+    <string name="your_services_amp_orders"><![CDATA[Your Services & Orders]]></string>
+    <string name="find_your_services_and_orders_below">Find your services and orders below</string>
+    <string name="approved">Approved</string>
+    <string name="your_lab_tests">Your Lab Tests</string>
+    <string name="name">Name</string>
+    <string name="order_date">Order Date</string>
+    <string name="status">Status</string>
+    <string name="you_have_not_any_lab_test">you don\'t have any laboratory report</string>
+    <string name="book_home_visit">Book Home Visit</string>
+    <string name="get_queue_ticket">Get Queue Ticket</string>
+    <string name="cancel_queue_ticket">Cancel Queue Ticket</string>
+    <string name="radiology">Radiology</string>
+    <string name="you_have_not_any_radiology_test">you don\'t have any radiology report</string>
+    <string name="your_ordered_medications">Your Ordered Medications</string>
+    <string name="medication">Medication</string>
+    <string name="dosage">Dosage</string>
+    <string name="you_have_not_any_medication">You have not any medication</string>
+    <string name="gps_disable_msg">GPS is disabled in your device. Would you like to enable it?</string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="currently_waiting"> Currently Waiting</string>
+    <string name="pending">Pending</string>
+    <string name="in_review">In Review</string>
+    <string name="ordered">Ordered</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="paid">Paid</string>
+    <string name="dispensed">Dispensed</string>
+    <string name="prepared">Prepared</string>
+    <string name="declined">Declined</string>
+    <string name="awaiting_services">Awaiting service</string>
+    <string name="service_being_rendered">Service being rendered</string>
+    <string name="service_signed_off">Service signedOff</string>
+    <string name="discontinued">Discontinued</string>
+    <string name="started">Started</string>
+    <string name="completed">Completed</string>
+    <string name="verified_and_reported">Verified and reported</string>
+    <string name="sample_collected">Sample collected</string>
+    <string name="sample_recieved">Sample received</string>
+    <string name="sample_dispatched">Sample dispatched</string>
+    <string name="sample_sent_out">Sample sentOut</string>
+    <string name="sample_in_process">Sample in process</string>
+    <string name="need_second_sample">Need second sample</string>
+    <string name="quantity_not_sufficient">Quantity not sufficient</string>
+    <string name="sample_rejected">Sample rejected</string>
+    <string name="sample_refused">Sample refused</string>
+    <string name="created">Created</string>
+    <string name="partialy_paid">Partialy aid</string>
+    <string name="partialy_approved">Partially Approved</string>
+    <string name="order_a_home_visit">Order a Home Visit</string>
+    <string name="book_your_home_visit_for_lab_test">Book your home visit for lab test</string>
+    <string name="your_location">Your location</string>
+    <string name="search_location">Search Location</string>
+    <string name="help_us_to_find_you_on_the_map">Help us to find you on the map</string>
+    <string name="address">Address</string>
+    <string name="preffered_date_amp_time"><![CDATA[Preferred Date & Time]]></string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Time</string>
+    <string name="lab_tests">Lab Tests</string>
+    <string name="service">Service</string>
+    <string name="please_select_Address">Please select the address.</string>
+    <string name="please_select_prefered_date">Please select the preferred date.</string>
+    <string name="please_select_prefered_time">Please select the preferred time.</string>
+    <string name="diabetes_program">Diabetes Program</string>
+    <string name="goal_achieved">Goal Achieved</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="bmi">BMI</string>
+    <string name="ha1c">HA1C</string>
+    <string name="goal_9">Goal 9</string>
+    <string name="home_blood_sugar_hbs">Home Blood Sugar (HBS)</string>
+    <string name="your_bs_is_perfect">Your BS is perfect</string>
+    <string name="add_this">Add This</string>
+    <string name="no_date_added">0.0</string>
+    <string name="custion_bs_low">Caution! Your BS is low</string>
+    <string name="bs_high">Caution! Your BS is rising</string>
+    <string name="warrior">You are a Warrior! Keep it up!</string>
+    <string name="champion">You are a Champion! Congrats!</string>
+    <string name="fighter">You are a Fighter! Lets do it!</string>
+    <string name="add">Add</string>
+    <string name="please_enter_20_2600">Please enter the sugar in the range of 20-2600</string>
+    <string name="reset">Reset</string>
+    <string name="enter_email">Enter Email *</string>
+    <string name="valid_verification_code">Please enter the valid verification code.</string>
+    <string name="please_accept_terms_conditions">Please accept the terms and conditions.</string>
+    <string name="no_appt_available">There are no appointment slots available.</string>
+    <string name="you_have_no_services_and_orders_for_this_appoiintment">You have no services and orders for this appointment</string>
+    <string name="confirm_reschedule"><![CDATA[Confirm & Reschedule]]></string>
+    <string name="for_security_reasons_your_national_id_iqama">For security reasons,your national id/iqama information is not displayed. if you wish to update these details, Please visit the clinic.</string>
+    <string name="correct_salutation">Please select correct salutation</string>
+    <string name="more_info">More Info</string>
+    <string name="less_info">Less Info</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="in">in</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="Are_you_sure_do_you_wish_to_cancel_the_booked">Are you sure, do you wish to cancel the booked</string>
+    <string name="queue_ticket">Queue ticket.</string>
+    <string name="lab"> Lab </string>
+    <string name="pharmacy"> Pharmacy </string>
+    <string name="validate">Validate</string>
+    <string name="your_hbs_today">Your HBS Today </string>
+    <string name="enter_hbs_value">Enter HBS value</string>
+    <string name="days">days</string>
+    <string name="viewall_url">https://www.myclinic.com.sa/en/doctors-and-services.html</string>
+    <string name="about_us_url">https://www.myclinic.com.sa/en/about-us.html</string>
+    <string name="dctr_specialist_utl">https://www.myclinic.com.sa/en/doctors-and-services.html</string>
+    <string name="contact_us_url">https://www.myclinic.com.sa/en/contact-us.html</string>
+    <string name="relogin">You have been automatically logged out. Please re-login again to continue.</string>
+    <string name="restart_app_etc">Please restart the app for this setting to take effect.</string>
+    <string name="yes_please">Yes please</string>
+    <string name="email_sent">Email Sent</string>
+    <string name="thank_you_if_your_email_is_on_file_we_will_send_you_a_link_to_reset_your_password">Thank you! If your email is on file, we will send you a link to reset your password.</string>
+    <string name="sorry_not_match">Sorry this does not match our records. Please try again.</string>
+    <string name="internet_connection">Please connect your device to the internet.</string>
+    <string name="alpha_num_char">0123456789-_./-+)(,|\#abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="tawnuyia">Tawuniya</string>
+    <string name="tawnuyia_en">Tawuniya</string>
+    <string name="do_not_remind_me_again">Do not remind me again</string>
+    <string name="reminder">Reminder!</string>
+
+    <string name="warningMsg">Please note if you have a fever or have travelled abroad within the past 14 days or within the Qatif region, we are unable to accept appointments at this time and you may be refused treatment if you attempt to book and do not disclose this</string>
+
+    <string name="teleAPptBookedmsgCancel">
+        Please note that you will not be able to cancel or reschedule the booked appointment online within 5 mins of the appointment time.</string>
+
+    <string name="teleAPptBookedmsg">Please go to upcoming appointments press the join and wait for the doctor start the meeting.</string>
+
+    <string name="appt_booked_successfully_title">Appointment is booked successfully!</string>
+
+    <!--    <string name="teleAPptBookedmsg">Appointment is booked successfully!
+
+        Please go to Upcoming Appointments and press the Check-In button at the appointment time, then wait for the doctor to call you.</string>-->
+
+    <string name="cardProblem">Sorry, there seems to be a problem with your card. Please verify the details again or contact your bank. Alternatively, please use another payment method.</string>
+    <string name="this_is_a_kind_reminder">This is a kind reminder of your My Clinic telemedicine appointment with</string>
+    <string name="on">on</string>
+    <string name="please_logon_at_that">.Please logon at that appointment time, go to Upcoming Appointments and press the Check-In button. The doctor will then call you at this time. You may continue using your phone once you have checked-in at that appointment time. The doctor will call you when ready.</string>
+
+    <string name="leavemsg_waiting_room">Are you sure you wish to leave the waiting room?The Doctor will not be able call you if you have.</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="i_m_flexible_with_my_dates">I\'m flexible with my dates</string>
+    <string name="there_is_no_doctor_available">Weekly schedule is not available</string>
+    <string name="sorry_request_data">Sorry your requested date is not available.We\'ve automatically selected next available date</string>
+    <string name="x_not_available">X - Not Available</string>
+    <string name="green_available">Green - Available</string>
+    <string name="please_click_on_one_of_the_available_days_below">Please click on one of the available days below.</string>
+    <string name="all_doctors">All Doctors</string>
+    <string name="no_week_appt_available">No appointments available.</string>
+    <string name="instant_live_consultation">Instant Live Consultation</string>
+    <string name="pharmacy_msg">Are you sure you wish to cancel the Pharmacy queue ticket?</string>
+    <string name="lab_msg">Are you sure you wish to cancel the Lab queue ticket?</string>
+    <string name="title_settings_dialog" translatable="false">Permissions Required</string>
+    <string name="rationale_video_app" translatable="false">This app needs access to your camera and mic to make video calls</string>
+    <string name="rationale_ask_again" translatable="false">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+
+    <string name="setting" translatable="false">Settings</string>
+    <string name="reject" translatable="false">Reject</string>
+    <string name="help">Help</string>
+    <string name="skip">Skip</string>
+    <string name="book_virtual_consultation">Book Virtual Consultation</string>
+    <string name="book_a_visit_to_clinic">Book A Visit To Clinic</string>
+    <string name="expiry_date_in">Expiry Date in</string>
+    <string name="gregorian">Gregorian</string>
+    <string name="hijri">Hijri</string>
+    <string name="text_insurance_confirmation">Do you want to add insurance?</string>
+    <string name="text_finish">Finish</string>
+    <string name="change_password">Change Password</string>
+    <string name="hint_enter_your_old_password">Enter your old password</string>
+    <string name="hint_enter_your_new_password">Enter your new password</string>
+    <string name="hint_re_enter_your_new_password">Re-enter your new password</string>
+
+    <string name="error_enter_password">Please enter old password</string>
+    <string name="error_new_password">Please enter new password</string>
+    <string name="error_new_password_invalid">Password should be at least 6 characters in length and have at least one number in it.</string>
+    <string name="error_repeat_password">Repeat password not matched</string>
+    <string name="text_password_changed">The password has been changed successfully!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search_country">Search Country</string>
+    <string name="if_you_need_more_assistance_please_contact_our_call_center_on_92_00_22_811">If you need more assistance. Please contact our call center on 92 00 22 811</string>
+    <string name="text_poor_internet">Poor network connection. Please check your network connection.</string>
+    <string name="text_calling">Calling</string>
+
+    <string name="please_select_clinic">Please Select Clinic</string>
+    <string name="company">Company</string>
+
+    <string name="text_no_call_us">92 00 22 811</string>
+
+    <string name="client_Id">922304098427-qeuc3vtndvd3leu5jcqjp2h6266vec2i.apps.googleusercontent.com</string>
+
+    <!--922304098427-qeuc3vtndvd3leu5jcqjp2h6266vec2i.apps.googleusercontent.com-->
+    <!--579662811459-ns6fnrprr7ndl38mj9igkg9kqtrip4ov.apps.googleusercontent.com-->
+    <!--922304098427-qeuc3vtndvd3leu5jcqjp2h6266vec2i.apps.googleusercontent.com-->
+    <!--//579662811459-ns6fnrprr7ndl38mj9igkg9kqtrip4ov.apps.googleusercontent.com-->
+    <!--  579662811459-ns6fnrprr7ndl38mj9igkg9kqtrip4ov.apps.googleusercontent.com-->
+
+    <string name="facebook_app_id">441680413914320</string>
+    <string name="fb_login_protocol_scheme">fb441680413914320</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="no_card_found">No Card Found</string>
+    <string name="swipe_left_to_delete_the_card">Swipe Left to Delete the Card</string>
+    <string name="want_to_save_card">Do you want to save this card?</string>
+    <string name="delete">Delete</string>
+    <string name="card_number_is_not_valid">Card Number is not valid</string>
+    <string name="please_select_correct_brand">Please select correct brand</string>
+    <string name="laboratory_reports">Laboratory Reports</string>
+    <string name="radiology_reports">Radiology Reports</string>
+    <string name="your_laboratory_reports">Your Laboratory Reports</string>
+    <string name="your_radiology_reports">Your Radiology Reports</string>
+    <string name="date">Date</string>
+    <string name="link">Link</string>
+    <string name="please_select_a_view_option">Please select a view option</string>
+    <string name="view_report">View Report</string>
+    <string name="view_image">View Image</string>
+    <string name="check_in_eligible">This appointment is not eligible for Self Check-In, please proceed to reception.</string>
+    <string name="a_new_window_will_open_if_you_have_trouble_viewing_your_report_try_refreshing_the_page">Note that these are high quality images. If you have a poor connection or have trouble viewing the report, please try refreshing the page.</string>
+    <string name="change_insurance">Change Insurance</string>
+    <string name="Insurance">Insurance</string>
+    <string name="change_insurance_msg">Sorry your account does not have insurance. Do you want to add new insurance?</string>
+    <string name="change_insurance_success">Insurance has been Changed Successfully</string>
+    <string name="add_insurance">ADD INSURANCE</string>
+
+    <string name="enable_smart_touch">Enable Smart Touch</string>
+    <string name="disable_smart_touch">Disable Smart Touch</string>
+    <string name="successfully_enabled_touch">You have successfully enabled Smart Touch for Login You can disable this feature at any time through the Settings menu</string>
+    <string name="disabled_smart_touch">Are you sure you would like to disable Smart Touch?</string>
+    <!--<string name="do_not_remind_me_again">Do not remind me again</string>-->
+    <string name="not_now">Not now</string>
+    <string name="smart_touch">Smart Touch</string>
+    <string name="you_can_now_logon_with_smart_touch_nsimply_go_to_the_settings_menu_to_nenable">You can now logon with Smart Touch. Simply go to the settings menu to enable</string>
+    <string name="something_went_wrong">Something went wrong. please try again</string>
+    <string name="login_using_your_bio_metric">Login using your biometric credentials</string>
+    <string name="join">Join</string>
+    <string name="pay">Pay</string>
+
+    <string name="id">ID</string>
+
+    <string name="announcements">Announcements</string>
+    <string name="zoom_disclaimer">Disclaimer: This consultation will be recorded.</string>
+    <string name="zoom_note">Note: Please select your one time audio/video preferences from your mobile settings. You may change your preferences at any time from your device settings. You may also enable and disable audio/video during the virtual consultation itself.</string>
+    <string name="zoom_wait">Please wait, it may take up to 1 min\nto connect with doctor</string>
+
+
+    <!-- search appointment -->
+    <string name="view_and_select_below_options">select from the options below</string>
+    <string name="search_doctor_speciality_or_location">Enter a doctor, speciality or location</string>
+    <string name="search_doctor">Search by doctor or speciality</string>
+    <string name="your_doctor_fvt_past">Your Favorite / Past Doctors</string>
+    <string name="optional">(optional)</string>
+    <string name="search_by_speciality">Search by speciality</string>
+    <string name="search_by_doctor">Search by doctor</string>
+    <string name="search_by_location">Search by location</string>
+    <string name="no_past_visit_found">No past visit found</string>
+    <string name="search">Search</string>
+    <string name="search_result">Your Search Results</string>
+    <string name="earliest_availability">Earliest Available Appointment</string>
+    <string name="month_view">Month View</string>
+    <string name="my_appointment">My Appointments</string>
+    <string name="confirm_your_appointment">Confirm your Appointment</string>
+    <string name="your_detail">Your Details</string>
+    <string name="your_account">Your Account</string>
+    <string name="we_just_need_a_few_details_from_you">We just need a few details from you in order to proceed with booking your appointment.</string>
+    <string name="we_will_create_account_for_your">We will create an account for you so you can access your appointment, pay and perform a check-in online, to save you time when you visit the clinic.</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="sign_in_now">Sign In now</string>
+    <string name="or_create_account_through">Or create your account through…</string>
+    <string name="confirm_appointment">Confirm Appointment</string>
+    <string name="my_profile">My Profile</string>
+    <string name="contact_us_and_help_visit">Contact Us or Visit Us</string>
+    <string name="faq">Faq</string>
+    <string name="earliest_apts">You may search the earliest available appointment by entering the fields below...</string>
+    <string name="view_profile">View Profile</string>
+
+    <!--home Screen -->
+    <string name="find_doctor">Find Doctor</string>
+    <string name="login_register">Login/Register</string>
+    <string name="home_services">Home Services</string>
+    <string name="book_now">Book Now</string>
+    <string name="find_clinic">Find Clinic</string>
+    <string name="go_back_amp_book_now"><![CDATA[Go Back & Book Now]]></string>
+    <string name="month_view_next_30_days">Month View (Next 30 days)</string>
+    <string name="available_timings">Available Timings</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="reports">Reports</string>
+    <string name="my_upcoming_appointments">My Upcoming Appointments</string>
+    <string name="prince_sultan">Al Mohammediyah</string>
+    <string name="safa">Al Safa</string>
+    <string name="prc">Petro Rabigh</string>
+    <string name="dental_title">Dental</string>
+    <string name="no_earliest_slot_available">No slots available.</string>
+    <string name="no_earliest_slot_available_check_other_branch">No slots available. Please select\nanother branch.</string>
+    <string name="no_earliest_slot_available_this_week">There are no slots available this week</string>
+    <string name="no_earliest_slot_available_month">No Earliest Slot Available. Please check below the month view to see doctors schedule.</string>
+    <string name="i_am_saudi">I am Saudi</string>
+
+
+    <string name="material_calendar_monday">M</string>
+    <string name="material_calendar_tuesday">T</string>
+    <string name="material_calendar_wednesday">W</string>
+    <string name="material_calendar_thursday">T</string>
+    <string name="material_calendar_friday">F</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">S</string>
+
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+    <string name="material_calendar_today_button">Today</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Cancel</string>
+    <string name="full_screen">Full Screen</string>
+    <string name="share">Share</string>
+    <string name="please_enter_the_recipient_s_email_address_in_order_to_share_a_link_to_view_the_report">Please enter the recipient\'s email address in order to share a link to view the report.</string>
+    <string name="report_success_msg">Report Shared Successfully</string>
+    <string name="verification_code_not_received">Verification code not received</string>
+    <string name="see_more">See more...</string>
+
+    <string name="no_schedule_for_next_month">No schedule for next month</string>
+    <string name="no_schedule_for_this_month">No schedule for this month</string>
+    <string name="press_month_view_to_check_the_doctor_schedule">Press the Month View button to check the doctor\'s schedule.</string>
+
+    <string name="procedures">Procedures</string>
+    <string name="special_test">Special Test</string>
+
+    <string name="TopUp_Fee_Alert_1">Please note that this appointment includes an additional fee of</string>
+    <string name="TopUp_Fee_Alert_2">If you wish to continue, please press \'Yes\'. Otherwise, select \'No\' to cancel.</string>
+
+    <string name="notice">Notice</string>
+    <string name="pay_services">Pay Services</string>
+    <string name="all_services_and_orders">All Services and Orders</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="please_select_your_service">Please Select your service</string>
+    <string name="no_payment_required">no payment required</string>
+    <string name="there_are_no_services_to_pay">There are no services to pay</string>
+    <string name="marked_paid_services">Any remaining services that have 0 SAR will be marked as paid once selected</string>
+    <string name="follow_up_note">Note: if you wish to book follow up appointment  please contact the call center</string>
+    <string name="Kindly_enable_your_location_to_conitinue">Please enable your location to continue.</string>
+    <string name="you_cannot_check_in">You cannot check-In because you are far away from clinic</string>
+    <string name="You_have_successfully_CheckedIn">You have been successfully checked-in. Please proceed to the waiting area.</string>
+    <string name="please_enable_location_to_confirm">Please enable your location on your phone to confirm that you are at the clinic to continue.</string>
+
+    <string name="please_visit_reception_for_detail_verification">Please visit the reception to check-in as your medical file details need to be verified</string>
+    <!--<string name="You_have_successfully_CheckedIn">You have been successfully checked-in. Please proceed to the waiting area for Triage.</string>-->
+
+    <string name="background_location_permission_message">
+       <b>Allow only while using the app</b> permission has been granted. If you want
+        to get location updates in the background even when not using the app then grant
+        <b>Allow all the time</b> permission
+    </string>
+    <string name="eligibility_check_message">Please wait while we are checking your insurance eligibility as per MOH regulations. This process can take up to 3 minutes. However You can continue using the app.</string>
+    <string name="one_hour_wait_message">You can check-in 1 hour before your appointment.</string>
+    <string name="check_in_period_expired">Check-in online period expired.</string>
+    <string name="check_in_available_text">Check-in available for</string>
+    <string name="please_press_to_continue">Press here to continue.</string>
+    <string name="appointment_not_available_for_self_check_in">Sorry, this appointment is not eligible for self check-in. Please visit reception to continue.</string>
+</resources>
+
+

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/payment_by_cash_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="0dp"
+        android:layoutDirection="ltr"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/rectangle_white_bg"
+            android:paddingTop="30dp"
+            android:layoutDirection="ltr"
+            android:paddingBottom="30dp">
+
+            <com.telemedicine.myclinic.views.RegularTextView
+                android:id="@+id/title_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="@string/cash"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.telemedicine.myclinic.views.LightTextView
+                android:id="@+id/warning_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_cash"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/are_you_sure_you_wish_to_pay_cash"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.telemedicine.myclinic.views.LightButton
+                android:id="@+id/yes_pay_cash"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/warning_title"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:drawableRight="@drawable/right_arrow"
+                android:drawablePadding="23dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="15dp"
+                android:text="@string/select"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/swipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_wallet">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/wallet" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/payment_by_insurance_card"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/rectangle_white_bg"
+                android:paddingTop="50dp"
+                android:layoutDirection="ltr"
+                android:paddingBottom="30dp">
+
+                <com.telemedicine.myclinic.views.RegularTextView
+                    android:id="@+id/title_insurance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/health_card"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <com.telemedicine.myclinic.views.LightTextView
+                    android:id="@+id/warning_title_insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_insurance"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/are_you_sure_you_want_to_use_this_health_insurance_card"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/insurance_data_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/warning_title_insurance"
+                    android:layout_marginTop="15dp"
+                    android:layoutDirection="locale"
+                    android:orientation="vertical">
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/membership_number"
+                        android:textDirection="locale" />
+
+
+                    <com.telemedicine.myclinic.views.LightTextView
+                        android:id="@+id/member_ship_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start|center_vertical"
+                        android:text=""
+                        android:textDirection="locale" />
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/expiry_date"
+                        android:visibility="gone"
+                        android:textDirection="locale" />
+
+                    <com.telemedicine.myclinic.views.LightTextView
+                        android:id="@+id/expiry_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start|center_vertical"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textDirection="locale" />
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/insurance_provider"
+                        android:textDirection="locale" />
+
+                    <com.telemedicine.myclinic.views.LightTextView
+                        android:id="@+id/insurance_provider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/axa_insurance"
+                        android:textDirection="locale" />
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/policy_number"
+                        android:textDirection="locale" />
+
+                    <com.telemedicine.myclinic.views.LightTextView
+                        android:id="@+id/policy_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start|center_vertical"
+                        android:text=""
+                        android:textDirection="locale" />
+
+                </LinearLayout>
+
+                <com.telemedicine.myclinic.views.LightButton
+                    android:id="@+id/yes_pay_by_insurance"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/insurance_data_container"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:drawablePadding="23dp"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="15dp"
+                    android:text="@string/select"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_wallet">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/insurance_card" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

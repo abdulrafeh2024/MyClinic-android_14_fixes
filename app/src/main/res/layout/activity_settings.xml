@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.telemedicine.myclinic.activities.SettingsActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:id="@+id/textChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:drawableEnd="@drawable/grey_right_arrow"
+        android:text="@string/change_password"
+        android:textColor="@color/colorPrussianBlue"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorGrey" />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/biometricView">
+
+       <com.telemedicine.myclinic.views.RegularTextView
+           android:id="@+id/biomatricLabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="15dp"
+           android:layout_alignParentStart="true"
+           android:text="@string/smart_touch"
+           android:textColor="@color/colorPrussianBlue"
+           android:textSize="14sp" />
+
+       <androidx.appcompat.widget.SwitchCompat
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:checked="false"
+           android:id="@+id/biomatricSwitch"
+           app:track="@drawable/customswitchselector"
+           android:thumb="@drawable/custom_track"
+           android:layout_centerVertical="true"
+           android:layout_marginEnd="15dp"/>
+
+   </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/viewLine"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorGrey" />
+
+</LinearLayout>

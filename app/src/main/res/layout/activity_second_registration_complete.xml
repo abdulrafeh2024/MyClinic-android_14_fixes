@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="locale"
+    tools:context="com.telemedicine.myclinic.activities.SecondRegistrationCompleteActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/profile_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.telemedicine.myclinic.views.BoldTextView
+                    android:id="@+id/profile_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/profile_completion_70"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <com.telemedicine.myclinic.views.LightTextView
+                    android:id="@+id/appointment_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_title1"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/complete_your_profile_to_book_appointments"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appointment_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:max="100"
+                    android:maxHeight="14dip"
+                    android:minHeight="14dip"
+                    android:progress="70"
+                    android:progressBackgroundTint="@color/colorGrey"
+                    android:progressBackgroundTintMode="multiply"
+                    android:progressTint="@color/colorPrimary"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/contact_information_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_title"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <com.telemedicine.myclinic.views.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/identity_information"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.telemedicine.myclinic.views.BoldTextInputLayout
+                    android:id="@+id/nationality_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/grey_border"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="6dp"
+                    android:textDirection="locale"
+                    app:hintTextAppearance="@style/hintSize11">
+
+                    <com.telemedicine.myclinic.views.LightSpinnerEdittext
+                        android:id="@+id/nationality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:editable="false"
+                        android:hint="@string/nationality"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="4dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:translationY="0dp" />
+
+                </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+                <com.telemedicine.myclinic.views.BoldTextInputLayout
+                    android:id="@+id/nationalIdType_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/grey_border"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="6dp"
+                    app:hintTextAppearance="@style/hintSize11">
+
+                    <com.telemedicine.myclinic.views.LightSpinnerEdittext
+                        android:id="@+id/nationalIdType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:editable="false"
+                        android:hint="@string/national_id_type"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="4dp"
+                        android:text=""
+                        android:textDirection="locale"
+                        android:textSize="14sp"
+                        android:translationY="0dp" />
+
+                </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+                <com.telemedicine.myclinic.views.BoldTextInputLayout
+                    android:id="@+id/nationalIDTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/grey_border"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="6dp"
+                    app:hintTextAppearance="@style/hintSize11">
+
+                    <com.telemedicine.myclinic.views.LightSpinnerEdittext
+                        android:id="@+id/nationalID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:maxLength="10"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="4dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textDirection="locale"
+                        android:textSize="14sp"
+                        android:translationY="0dp" />
+
+                </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
+
+                    <com.telemedicine.myclinic.views.BoldTextInputLayout
+                        android:id="@+id/expiryDateEdt_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_border"
+                        android:clickable="true"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="6dp"
+                        app:hintTextAppearance="@style/hintSize11">
+
+                        <com.telemedicine.myclinic.views.LightEdittext
+                            android:id="@+id/expiryDateEdt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/calendar"
+                            android:editable="false"
+                            android:hint="@string/national_id_expiry_date"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="4dp"
+                            android:text=""
+                            android:textDirection="locale"
+                            android:textSize="14sp"
+                            android:translationY="0dp" />
+
+                    </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+                    <View
+                        android:id="@+id/expiryDateEdt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="12dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/grey_border"
+                    android:layoutDirection="locale"
+                    android:paddingRight="10dp">
+
+                    <com.telemedicine.myclinic.views.LightTextView
+                        android:id="@+id/title_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="@string/attach_photo" />
+
+                    <TextView
+                        android:id="@+id/national_id_attach"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/attachment" />
+
+                    <ImageView
+                        android:id="@+id/nationalIdImg"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_below="@+id/title_photo"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/plus_bg" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_information_container"
+                android:layout_marginTop="10dp"
+                android:layoutDirection="locale"
+                android:orientation="vertical">
+
+                <com.telemedicine.myclinic.views.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/insurance_information"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.telemedicine.myclinic.views.LightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/are_you_a_insurance_holder" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layoutDirection="locale"
+                    android:orientation="horizontal">
+
+                    <com.telemedicine.myclinic.views.RadioButtonLight
+                        android:id="@+id/radioYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes" />
+
+                    <com.telemedicine.myclinic.views.RadioButtonLight
+                        android:id="@+id/radioNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:checked="true"
+                        android:text="@string/no" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/insurance_container_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.telemedicine.myclinic.views.BoldTextInputLayout
+                        android:id="@+id/insurance_carrier_spiiner_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_border"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="6dp"
+                        app:hintTextAppearance="@style/hintSize11">
+
+                        <com.telemedicine.myclinic.views.LightSpinnerEdittext
+                            android:id="@+id/insurance_carrier_spiiner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/down_arrow"
+                            android:editable="false"
+                            android:hint="@string/insurance_carrier"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="4dp"
+                            android:text=""
+                            android:textDirection="locale"
+                            android:textSize="14sp"
+                            android:translationY="0dp" />
+
+                    </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+
+                    <com.telemedicine.myclinic.views.BoldTextInputLayout
+                        android:id="@+id/policyNoEdt_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_border"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="6dp"
+                        app:hintTextAppearance="@style/hintSize11">
+
+                        <com.telemedicine.myclinic.views.LightEdittext
+                            android:id="@+id/policyNoEdt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:digits="@string/alpha_num_char"
+                            android:hint="@string/policy_no"
+                            android:inputType="text"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="4dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textDirection="locale"
+                            android:textSize="14sp"
+                            android:translationY="0dp" />
+
+                    </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+                    <com.telemedicine.myclinic.views.BoldTextInputLayout
+                        android:id="@+id/member_ship_no_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_border"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="6dp"
+                        app:hintTextAppearance="@style/hintSize11">
+
+                        <com.telemedicine.myclinic.views.LightEdittext
+                            android:id="@+id/member_ship_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:digits="@string/alpha_num_char"
+                            android:hint="@string/membership_id_number"
+                            android:inputType="text"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="4dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textDirection="locale"
+                            android:textSize="14sp"
+                            android:translationY="0dp" />
+
+                    </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+                    <com.telemedicine.myclinic.views.BoldTextInputLayout
+                        android:id="@+id/insuranceExpiryDate_til"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_non_editable"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="6dp"
+                        app:hintTextAppearance="@style/hintSize11">
+
+                        <com.telemedicine.myclinic.views.LightEdittext
+                            android:id="@+id/insuranceExpiryDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/calendar"
+                            android:editable="false"
+                            android:hint="@string/insurance_expiry_date"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="4dp"
+                            android:text=""
+                            android:textDirection="locale"
+                            android:textSize="14sp"
+                            android:translationY="0dp" />
+
+                    </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+
+                    <com.telemedicine.myclinic.views.BoldTextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_non_editable"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="6dp"
+                        app:hintTextAppearance="@style/hintSize11">
+
+                        <com.telemedicine.myclinic.views.LightEdittext
+                            android:id="@+id/contractName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:hint="@string/contract_name"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="4dp"
+                            android:text=""
+                            android:textSize="14sp"
+                            android:translationY="0dp" />
+
+                    </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+                    <com.telemedicine.myclinic.views.BoldTextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_non_editable"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="6dp"
+                        app:hintTextAppearance="@style/hintSize11">
+
+                        <com.telemedicine.myclinic.views.LightEdittext
+                            android:id="@+id/carrierNameEdt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:gravity="start|center_vertical"
+                            android:hint="@string/carrier_name"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="4dp"
+                            android:text=""
+                            android:textSize="14sp"
+                            android:translationY="0dp" />
+
+                    </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/grey_border"
+                        android:paddingRight="10dp">
+
+                        <com.telemedicine.myclinic.views.LightTextView
+                            android:id="@+id/title_photo_insurance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="start"
+                            android:text="@string/attach_insurance_card" />
+
+                        <TextView
+                            android:id="@+id/insurance_id_icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:drawableRight="@drawable/attachment" />
+
+                        <ImageView
+                            android:id="@+id/insuranceCardImg"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_below="@+id/title_photo_insurance"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/plus_bg" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.telemedicine.myclinic.views.LightCheckBox
+                    android:id="@+id/termsConditions"
+                    style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="false"
+                    android:layoutDirection="locale"
+                    android:paddingLeft="5dp"
+                    android:text="@string/i_agree_to_terms_amp_conditions" />
+
+                <com.telemedicine.myclinic.views.LightButton
+                    android:id="@+id/submit_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:onClick="Submit"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/submit"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

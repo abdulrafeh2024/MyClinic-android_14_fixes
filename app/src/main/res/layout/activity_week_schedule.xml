@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    tools:context="com.telemedicine.myclinic.activities.WeekScheduleActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/register_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+        <com.telemedicine.myclinic.views.BoldTextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            tools:text="Al Safa"
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="14sp" />
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/doctor_profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Obstetrics &amp; Gynecology Specialist"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/container_appoint_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_profession"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/please_click_on_one_of_the_available_days_below"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrussianBlue"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.telemedicine.myclinic.views.LightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/green_available"
+                    android:textColor="@color/colorPrussianBlue"
+                    android:textSize="12sp" />
+
+                <com.telemedicine.myclinic.views.LightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/x_not_available"
+                    android:textColor="@color/colorPrussianBlue"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/schedule_week_time_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/container_appoint_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="10dp"
+            android:clipToPadding="false" />
+
+    </RelativeLayout>
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:id="@+id/placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_week_appt_available"
+        android:textSize="15sp" />
+
+</RelativeLayout>

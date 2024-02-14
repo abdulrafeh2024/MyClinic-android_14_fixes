@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/toolbar_right_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/menu_" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_toolbar" />
+
+    <ImageView
+        android:id="@+id/toolbar_left_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/refresh_x" />
+
+    <com.telemedicine.myclinic.views.BoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/id"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/patientRId"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rounded_blue_circle"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:id="@+id/notification_view"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/notificationIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_bell" />
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:visibility="invisible"
+            android:id="@+id/notification_alert_view"
+            android:background="@drawable/red_notification_circle"
+            app:layout_constraintTop_toTopOf="@+id/notificationIcon"
+            android:layout_marginEnd="3dp"
+            tools:text="20"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="7dp"
+            app:layout_constraintEnd_toEndOf="@+id/notificationIcon"
+          />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:id="@+id/patientDId"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/toolbar_left_iv" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLightGrey" />
+
+</RelativeLayout>

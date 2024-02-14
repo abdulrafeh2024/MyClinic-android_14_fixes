@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@color/colorPrimary">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:gravity="bottom|center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="55"
+            android:orientation="vertical">
+
+            <com.telemedicine.myclinic.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/choose_a_lanugage"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <com.telemedicine.myclinic.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_border"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_horizontal"
+                android:onClick="English"
+                android:padding="15dp"
+                android:text="English"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <com.telemedicine.myclinic.views.ArabicRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="39dp"
+                android:layout_marginRight="39dp"
+                android:background="@drawable/white_border_except_top"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_horizontal"
+                android:onClick="Arabic"
+                android:padding="15dp"
+                android:text="العربية"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

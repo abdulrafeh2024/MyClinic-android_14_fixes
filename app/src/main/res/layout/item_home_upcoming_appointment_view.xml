@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="locale">
+
+    <RelativeLayout
+        android:id="@+id/container_outside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/doctor_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/doctr"
+            app:civ_border_color="@color/colorGrey"
+            app:civ_border_width="2dp" />
+
+        <com.telemedicine.myclinic.views.BoldTextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="2dp"
+            android:layout_toStartOf="@+id/headset"
+            android:layout_toEndOf="@+id/doctor_image"
+            android:layout_toRightOf="@+id/doctor_image"
+            android:text="Dr . Sawsan Abdul Dayem"
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="13sp" />
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/doctor_profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_name"
+            android:layout_toEndOf="@+id/doctor_image"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/doctor_image"
+            tools:text="Obstetrics &amp; Gynecology Specialist"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+
+        <com.telemedicine.myclinic.views.LightButton
+            android:id="@+id/days"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            tools:text="@string/today"
+            android:textColor="@color/colorWhite"
+            android:textSize="11sp"
+            android:layout_toEndOf="@id/doctor_image"
+            android:layout_toRightOf="@+id/doctor_image"
+            android:layout_below="@+id/doctor_profession"/>
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_profession"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/days"
+            android:layout_toRightOf="@+id/days"
+            tools:text="12/12/2019 6:30 PM"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

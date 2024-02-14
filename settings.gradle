@@ -1,0 +1,9 @@
+//include ':oppwa.mobile-4.5.0-release'
+//include ':ipworks3ds_sdk_deploy'
+//include ':ipworks3ds_sdk'
+include ':app', ':ViewPagerIndicator-Library', ':alipaySdk-15.5.9'
+/*include ':commonlib'
+include ':mobilertc'*/
+//https\://services.gradle.org/distributions/gradle-7.4-all.zip
+include ':commonlib'
+include ':mobilertc'

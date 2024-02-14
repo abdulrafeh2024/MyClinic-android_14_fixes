@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/doctor_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/doctr"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="0dp" />
+
+    <com.telemedicine.myclinic.views.BoldTextView
+        android:id="@+id/doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/doctor_image"
+        android:layout_toRightOf="@+id/select_patient"
+        android:gravity="right"
+        android:text=""
+        android:textColor="@color/colorPrussianBlue"
+        android:textSize="12sp" />
+
+    <com.telemedicine.myclinic.views.LightTextView
+        android:id="@+id/doctor_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctor_name"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/doctor_image"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <com.telemedicine.myclinic.views.LightTextView
+        android:id="@+id/select_patient"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/select"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/doctor_image"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLightGrey" />
+
+</RelativeLayout>

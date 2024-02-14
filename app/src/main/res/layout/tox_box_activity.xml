@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_bg">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/subscriber_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:id="@+id/publisher_container"
+            android:layout_width="@dimen/publisher_width"
+            android:layout_height="@dimen/publisher_height"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="@dimen/publisher_right_margin"
+            android:layout_marginRight="@dimen/publisher_end_margin"
+            android:layout_marginBottom="@dimen/publisher_bottom_margin"
+            android:background="@color/publisher_border_color"
+            android:padding="@dimen/publisher_padding" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:onClick="Cancel"
+            android:src="@drawable/ic_cancel_red_24dp" />
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="35dp"
+                android:onClick="SwapCamera"
+                android:src="@drawable/ic_switch_camera_white_24dp" />
+
+            <ImageView
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="35dp"
+                android:onClick="VideoAudio"
+                android:src="@drawable/ic_videocam_white_24dp" />
+
+            <ImageView
+                android:id="@+id/mic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:onClick="Mic"
+                android:src="@drawable/ic_mic_black_24dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

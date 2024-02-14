@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:layoutDirection="locale"
+    android:onClick="Hide"
+    tools:context="com.telemedicine.myclinic.activities.MoreInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:id="@+id/less_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/less_info" />
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/more_info_bg"
+                android:text="@string/less_info"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                app:textAllCaps="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/less_info"
+            android:background="#002B4B"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:id="@+id/contact_us_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/contact_us"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <com.telemedicine.myclinic.views.RegularTextView
+                android:id="@+id/contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_us_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/jeddah_nprince_sultan_st_al_mohammadiyah_dist"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:id="@+id/visit_us_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_us"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/visit_us"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <!--    <com.telemedicine.myclinic.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_us"
+                    android:text="@string/visit_us_not"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toEndOf="@id/visit_us_title"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />-->
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/visit_us_title"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="35"
+                    android:orientation="vertical">
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="@string/sat_sun"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp" />
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start"
+                        android:text="@string/sunday_thursday_n9_00_am_09_00_pm"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="35"
+                    android:orientation="vertical">
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="@string/sat"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp" />
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start"
+                        android:text="@string/saturday_n1_00_pm_09_00_pm"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="35"
+                    android:orientation="vertical">
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="@string/friday"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp" />
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start"
+                        android:text="@string/friday_closed"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="9sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container"
+                android:layout_marginTop="0dp"
+                android:layoutDirection="locale">
+
+                <com.telemedicine.myclinic.views.BoldTextView
+                    android:id="@+id/call_us_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/call_us"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <com.telemedicine.myclinic.views.RegularTextView
+                    android:id="@+id/call_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/call_us_title"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:autoLink="phone"
+                    android:text="@string/text_no_call_us"
+                    android:textColor="@color/colorWhite"
+                    android:textColorLink="@android:color/white"
+                    android:textDirection="ltr"
+                    android:textSize="10sp" />
+
+                <com.telemedicine.myclinic.views.BoldTextView
+                    android:id="@+id/email_us_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/email_us"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <com.telemedicine.myclinic.views.RegularTextView
+                    android:id="@+id/email_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/call_us_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:autoLink="email"
+                    android:text="info@myclinic.com.sa"
+                    android:textColor="@color/colorWhite"
+                    android:textColorLink="@android:color/white"
+                    android:textSize="10sp" />
+
+                <com.telemedicine.myclinic.views.BoldTextView
+                    android:id="@+id/whatsapp_us_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/whatsapp_us"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <com.telemedicine.myclinic.views.RegularTextView
+                    android:id="@+id/whatsapp_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/call_us_title"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="28dp"
+                    android:autoLink="none"
+                    android:gravity="start"
+                    android:text="@string/whatsapp"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="ltr"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:id="@+id/visit_clinic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container_"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text=" @MyClinicKSA"
+                android:textColor="#008C99"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/visit_clinic"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/facebook" />
+
+                <ImageView
+                    android:id="@+id/twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/twitter" />
+
+                <ImageView
+                    android:id="@+id/linkedin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/in"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/insta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/insta" />
+
+                <ImageView
+                    android:id="@+id/snap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/snap" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

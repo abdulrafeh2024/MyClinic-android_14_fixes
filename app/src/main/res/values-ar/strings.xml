@@ -1,0 +1,668 @@
+<resources>
+    <string name="app_name">عيادتي</string>
+    <string name="choose_a_lanugage">اختر اللغة</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="don_t_have_account">ليس لديك حساب ؟</string>
+    <string name="forgot_password">هل نسيت كلمة السر؟</string>
+    <string name="enter_your_email_below_to_reset_password">الرجاء ادخال بريدك الالكتروني لإعادة تعيين كلمة المرور</string>
+    <string name="enter_registered_e_mail">الرجاء ادخال برديك الالكتروني المسجل</string>
+
+    <string name="we_have_found_the_following_people_registered_under_this_mobile_number">لقد وجدنا قائمة بالأشخاص المسجلين تحت هذا الرقم </string>
+    <string name="congratulations">تهانينا!</string>
+    <string name="profile_created_successfully">لقد انشأت حسابك بنجاح. الرجاء المتابعة لتسجيل الدخول ليمكنك انشاء ملف التعريف الخاص بك.</string>
+    <string name="cityJeddah">جدة</string>
+    <string name="KSA">المملكة العربية السعودية</string>
+    <string name="betaqa_no">بطاقة رقم </string>
+    <string name="betaqa">بطاقة</string>
+    <string name="Iqama">اقامة</string>
+    <string name="Passport">جواز سفر</string>
+
+    <string name="required">Required *</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثى</string>
+
+    <string name="Mr">سيد</string>
+    <string name="Mrs">سيدة</string>
+    <string name="Ms">آنسة</string>
+    <string name="Miss">انسة</string>
+    <string name="Dr">دكتور</string>
+    <string name="national_id_exist">رقم الهوية الوطنية مسجل بالفعل </string>
+    <string name="please_select_the_appointment_you_would_like_to_create"> الرجاء اختيار الموعد المناسب لك</string>
+    <string name="appointment_to_visit_the_clinic">موعد لزيارة العيادة </string>
+
+    <string name="Male">ذكر</string>
+    <string name="Female">انثى</string>
+
+    <string-array name="gender">
+        <item>@string/Male</item>
+        <item>@string/Female</item>
+    </string-array>
+
+    <string-array name="salutation">
+        <item>سيد</item>
+        <item>سيدة</item>
+        <item>آنسة</item>
+        <item>دكتور</item>
+    </string-array>
+
+    <string-array name="nationalId">
+        <item>اقامة</item>
+        <item>جواز سفر</item>
+    </string-array>
+
+    <string-array name="Betaqa">
+        <item>بطاقة</item>
+    </string-array>
+
+
+    <!-- HyperPay Strings-->
+    <string name="checkout_ui_callback_scheme">myclinictele</string>
+
+    <string name="visa">VISA</string>
+
+    <string name="card_holder_hint">حامل البطاقة </string>
+    <string name="card_number_hint">رقم البطاقة </string>
+    <string name="card_expiry_month_hint">الشهر</string>
+    <string name="card_expiry_year_hint">السنة</string>
+    <string name="card_cvv_hint">CVV</string>
+    <string name="bankdetail">الرجاء ادخال معلومات البطاقة </string>
+    <string name="error_empty_fields">كل الحقول إلزامية.</string>
+    <string name="error_message">An error occurred</string>
+    <string name="date_delimiter">/</string>
+
+    <string name="button_ok">حسنا</string>
+    <string name="button_cancel">إلغاء</string>
+    <string name="button_pay_now">الدفع الان </string>
+
+    <string name="progress_message_please_wait">ارجوك انتظر…</string>
+    <string name="amount">المبلغ </string>
+
+    <string name="success">000.000.000</string>
+    <string name="success1">000.000.100</string>
+    <string name="success2">000.100.110</string>
+    <string name="success3">000.100.111</string>
+    <string name="success4">000.100.112</string>
+    <string name="success5">000.300.000</string>
+    <string name="ok">حسنا</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+
+    <string name="check_in">تسجيل الحضور</string>
+    <string name="api_key">AIzaSyDrAjBmEn_G4ZV9Nwm63t9bvHcE-y30WrY</string>
+    <string name="home_visit_message">شكرا لك، سيقوم فريقنا بالتواصل معك في اقرب وقت للزيارة المنزلية</string>
+    <string name="my_clininc">عيادتي</string>
+    <string name="your_lab_queuing_ticket_no">رقم تذكره طابور المختبر الخاص بك.</string>
+    <string name="your_pharmacy_queuing_ticket_no">رقم تذكره طابور الصيدليه الخاص بك.</string>
+    <string name="your_pre_auth_status">حاله طلب الموافقه الخاص بك</string>
+    <string name="select_other_days">Please select date between Sunday to Thursday.</string>
+    <string name="book">احجز</string>
+    <string name="view">عرض</string>
+    <string name="cancel_appointment">هل انت متأكد من رغبتك بإلغاء هذا الموعد؟</string>
+    <string name="m_clinic">عيادتي</string>
+    <string name="whatsapp"><u>050 122 8111</u></string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="about_us">نبذة عنا</string>
+    <string name="doctors_amp_specialities">أطباؤنا وتخصصاتنا</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="switch_language">تغيير اللغة</string>
+    <string name="create_your_to_book_your_appointment">إنشاء حساب لحجز موعدك</string>
+    <string name="register_account">تسجيل حساب </string>
+    <string name="logon">دخول </string>
+    <string name="device_type">20</string>
+    <string name="email">البريد الالكتروني *</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forgot">هل نسيت؟</string>
+    <string name="remember_my_email">تذكر بريدي الإلكتروني</string>
+    <string name="please_enter_email">من فضلك ادخل كلمة المرور</string>
+    <string name="please_enter_valid_email">من فضلك قم بادخال بريد الكتروني صحيح</string>
+    <string name="technical_info">Technical Info :</string>
+    <string name="please_wait">الرجاء الانتظار ...</string>
+    <string name="fill_in_the_form_to_get_instant_access">الرجاء تعبئة النموذج للدخول السريع</string>
+    <string name="_1">١</string>
+    <string name="basic_details">المعلومات الرئيسية</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="register_your_account_through">سجل حسابك من خلال …</string>
+    <string name="or_sign_in_through">أو تسجيل الدخول من خلال …</string>
+    <string name="or_set_your_password_and_register">أو قم بتعيين كلمة المرور الخاصة بك وقم بالتسجيل ..</string>
+    <string name="_2">٢</string>
+    <string name="verify_account">توثيق الحساب</string>
+    <string name="_3">٣</string>
+    <string name="confirm">تأكيد</string>
+    <string name="tell_us_who_you_are">من أنت؟</string>
+    <string name="mobile_number">ادخل رقم الهاتف المتنقل *</string>
+    <string name="next">التالي</string>
+    <string name="please_enter_the_verification_code">الرجاء ادخال رمز التحقق.</string>
+    <string name="verification_code">رمز التحقق *</string>
+    <string name="set_password">ضبط كلمة السر *</string>
+    <string name="re_enter_password">الرجاء اعادة كتابة كلمة السر *</string>
+    <string name="you_can_resend_request_for_sms_after_119_secs">لي إعادة ارسال رمز SMS بعد 60 ثانية</string>
+    <string name="resend">إعادة ارسال</string>
+    <string name="verify">تاكيد</string>
+    <string name="name_en">الاسم (انجلش)</string>
+    <string name="name_ar">الاسم (عربي)</string>
+    <string name="gender">الجنس *</string>
+    <string name="dob">تاريخ الميلاد</string>
+    <string name="please_enter_valid_number">من فضلك قم بادخال رقم هاتف صحيح</string>
+    <string name="sms_count_msg">لإعادة ارسال رمز SMS بعد  </string>
+    <string name="seconds"> ثانية </string>
+    <string name="limit_on_password">يجب أن تحتوي كلمة المرور على 6 أحرف ورقم واحد على الأقل.</string>
+    <string name="password_should_same">كلمة المرور غير متطابقة، الرجاء إعادة المحاولة.</string>
+    <string name="please_select_your_profile_to_show">الرجاء اختيار الملف المراد عرضه</string>
+    <string name="select">اختيار</string>
+    <string name="switch_profile">لتغيير الملف الطبي</string>
+    <string name="my_account">حسابي </string>
+    <string name="add_patient">إضافة مريض</string>
+    <string name="log_out">تسجيل الخروج ؟</string>
+    <string name="follow_ups_available_0">مواعيد المراجعة الموجودة (0)</string>
+    <string name="upcoming_appointments"> مواعيدك القادمة</string>
+    <string name="past_appointments">مواعيدك السابقة</string>
+    <string name="centre_of_excellence"> مركز التميز</string>
+    <string name="book_now"> احجز الآن</string>
+    <string name="follow_up_without_zero">مواعيد المراجعة الموجودة</string>
+    <string name="exit">هل تريد الخروج</string>
+    <string name="profile_completion_45">الملف مكتمل 45%</string>
+    <string name="complete_your_profile_to_book_appointments">الرجاء اكمال الملف لحجز المواعيد</string>
+    <string name="basic_information">المعلومات الرئيسية</string>
+    <string name="salutation">الكنية *</string>
+    <string name="first_name">الإسم الأول *</string>
+    <string name="middle_name">الإسم الأوسط *</string>
+    <string name="last_name">الإسم الأخير *</string>
+    <string name="mrn">رقم الملف الطبي</string>
+    <string name="date_of_birth">تاريخ الميلاد * </string>
+    <string name="city">المدينة *</string>
+    <string name="district">الحي</string>
+    <string name="please_select_gender">الرجاء تحديد الجنس</string>
+    <string name="please_select_salutation">الرجاء اختيار اللقب</string>
+    <string name="please_enter_first_name">الرجاء إدخال الاسم الأول</string>
+    <string name="please_enter_middle_name">الرجاء إدخال الاسم الأوسط</string>
+    <string name="please_enter_last_name">الرجاء إدخال اسم العائلة</string>
+    <string name="please_select_date_of_birth">الرجاء اختيار تاريخ الميلاد</string>
+    <string name="please_select_city">الرجاء اختيار مدينةy</string>
+    <string name="profile_completion_70">الملف مكتمل 70%</string>
+    <string name="identity_information">معلومات الهوية</string>
+    <string name="nationality">الجنسية *</string>
+    <string name="national_id_type">نوع الهوية *</string>
+    <string name="national_id"> بطاقة الهوية *</string>
+    <string name="national_id_expiry_date"> تاريخ انتهاء بطاقة الهوية *</string>
+    <string name="attach_photo"> ارفق الصورة</string>
+    <string name="insurance_information"> بيانات التأمين</string>
+    <string name="are_you_a_insurance_holder"> هل تملك تأمين؟</string>
+    <string name="insurance_carrier"> حامل التأمين *</string>
+    <string name="Insurance">تأمين</string>
+    <string name="insurance_expiry_date">تاريخ انتهاء التأمين *</string>
+    <string name="policy_no">رقم البوليصة *</string>
+    <string name="membership_id_number">رقم العضوية *</string>
+    <string name="carrier_name"> الفئه *</string>
+    <string name="contract_name"> اسم الشركة * </string>
+    <string name="attach_insurance_card">ارفق بطاقة التأمين</string>
+    <string name="i_agree_to_terms_amp_conditions"> أوافق على الأحكام والشروط</string>
+    <string name="submit">ارسال</string>
+    <string name="choose_image_media">اختر من ألبوم الصور</string>
+    <string name="valid_betaqa">رقم بطاقة الهوية/الإقامة غير صحيح</string>
+    <string name="select_country">الرجاء اختيار البلد</string>
+    <string name="please_select_national_id">الرجاء اختيار نوع الهوية</string>
+    <string name="please_enter_national_id_no">الرجاء ادخال رقم الهوية</string>
+    <string name="mem_already_exist">رقم العضوية مسجل بالفعل</string>
+    <string name="update">تحديث</string>
+    <string name="jeddah_nprince_sultan_st_al_mohammadiyah_dist">جدة \nشارع الامير سلطان، حي المحمدية.</string>
+    <string name="visit_us">تفضل بزيارتنا</string>
+    <string name="sat_sun">الاحد - الخميس</string>
+   <!-- <string name="sunday_thursday_n9_00_am_09_00_pm">
+        ١٠:٠٠ صباحاً -  ٤ عصرا\n
+        ١٠:٠٠ مساءً - ٢:٠٠
+        بعد منتصف الليل
+</string>-->
+    <string name="sunday_thursday_n9_00_am_09_00_pm">٠٩:٠٠ صباحًا - ٠٩:٠٠ مساء</string>
+
+   <!-- <string name="sunday_thursday_n9_00_am_09_00_pm">من الأحد إلى الخميس \n
+        ١٠:٠٠ صباحاً -  ٤ عصرا\n
+        ١٠:٠٠ مساءً - ٢:٠٠\n
+        بعد منتصف الليل
+</string>-->
+  <!--  <string name="saturday_n1_00_pm_09_00_pm">
+        ١٢:٠٠ظهراً - ٤ عصراً\n
+    ١٠:٠٠ مساءً - ٢:٠٠
+         بعد منتصف الليل
+    </string>-->
+
+    <string name="saturday_n1_00_pm_09_00_pm">٠١:٠٠ ظهرًا - ٠٩:٠٠ مساء</string>
+
+    <string name="sat">السبت </string>
+    <string name="friday_closed"> مغلق</string>
+    <string name="friday">الجمعة</string>
+    <string name="call_us">اتصل بنا</string>
+    <string name="email_us">تواصل معنا عبر البريد الإلكتروني</string>
+    <string name="whatsapp_us">الواتساب </string>
+    <string name="cancel">إلغاء</string>
+    <string name="accept">موافق</string>
+    <string name="reject" translatable="false">رفض</string>
+    <string name="book_an_appointment"> احجز الموعد</string>
+    <string name="fill_in_the_form_below_to_book"> الرجاء تعبئة النموذج اسفل لحجز الموعد</string>
+    <string name="date_of_appointment"> تاريخ الموعد *</string>
+    <string name="select_specialty"> اختار التخصص * </string>
+    <string name="select_date_of_appointment">حدد تاريخ الموعد</string>
+    <string name="please_select_the_speciality">الرجاء اختيار التخصص</string>
+    <string name="please_select_location">Please select the location.</string>
+    <string name="available_slots">المواعيد المتاحة </string>
+    <string name="select_from_the_available_slots_below">الرجاء الاختيار من المواعيد المتاحة اسفل </string>
+    <string name="change_date">تغيير التاريخ </string>
+    <string name="am"> الفترة الصباحية</string>
+    <string name="pm"> الفترة المسائية</string>
+    <string name="reschedule">إعادة جدولة</string>
+    <string name="reschedule_appointment">اعادة جدولة الموعد</string>
+    <string name="please_select_the_time">الرجاء اختيار الوقت</string>
+    <string name="sure_do_want_schedule">Are you sure , Do you want to Reschedule the appointment!</string>
+    <string name="appt_reschedule_successfully">تم إعادة جدولة موعدك بنجاح !</string>
+    <string name="registered_successfully">تهانينا!  تم إنشاء حسابك بنجاح!  يمكنك الآن تسجيل الدخول.</string>
+    <string name="appointment_details"> تفاصيل الموعد</string>
+    <string name="review_your_schedule_and_confirm"> مراجعة الحجز والمواعيد للتأكيد</string>
+    <string name="confirm_amp_book">التأكيد والحجز </string>
+    <string name="modify">تعديل </string>
+    <string name="appt_booked_successfully">تم حجز موعدك بنجاح!</string>
+    <string name="appointment_confirmed">الموعد مؤكد </string>
+    <string name="your_appointment_successfuly_booked">تم حجز الموعد بنجاح </string>
+    <string name="pay_online">الدفع عن طريق الانترنت </string>
+    <string name="self_checkin">تسجيل الحضور الذاتي</string>
+    <string name="go_to_dashboard">الرجوع للصفحة الرئيسية </string>
+    <string name="add_to_calendar">اضف الموعد إلى التقويم</string>
+    <string name="cancel_booking">الغاء الموعد </string>
+    <string name="check_in_online">جهاز الخدمة الذاتية</string>
+    <string name="price">السعر :  </string>
+    <string name="sar">ريال سعودي</string>
+    <string name="are_you_sure_cancel_the_apptment">هل انت متأكد من رغبتك بإلغاء هذا الموعد؟</string>
+    <string name="event_added_successfully">تم إضافة الموعد بنجاح إلى التقويم.</string>
+    <string name="download_successfully">تم تحميل التقرير بنجاح</string>
+    <string name="please_remember_to_arrive">من فضلك تذكر بوجوب حضورك ١٥ دقيقة قبل موعدك. </string>
+    <string name="has_an_appointment_with">لديه موعد </string>
+    <string name="appointment_with">موعد مع </string>
+    <string name="at_my_clinic">في عيادتي </string>
+    <string name="at">في </string>
+    <string name="thank_you_for_payment">تم الدفع بنجاح.  شكرا لتسديدك.</string>
+ <!--   <string name="thank_you_for_payment">شكراً لتسديدك مبلغ الدفع. يمكنك الآن تسجيل الحضور.</string>-->
+    <string name="waiting_room">غرفه الانتظار</string>
+    <string name="your_doctor_will_contact_you_here_at_specified_appointment_time_please_wait">الدكتور سوف يتواصل معك في الموعد المحدد .الرجاء الانتظار</string>
+    <string name="back_to_home">الرجوع للمنزل</string>
+    <string name="appointment_no">رقم الموعد : </string>
+    <string name="your_boarding_pass">بطاقه المرور الخاصة بك </string>
+    <string name="use_this_to_check_in_at_our_kiosks_in_the_clinic">قم باستخدم هذا الباركود في منصة التذاكر لتسجيل وصولك للعيادة </string>
+    <string name="appointment_date_amp_time">تاريخ ووقت الموعد </string>
+    <string name="speciality">تخصص</string>
+    <string name="doctor">الدكتور</string>
+    <string name="cash">نقداً</string>
+    <string name="Self">نقدي</string>
+    <string name="are_you_sure_you_wish_to_pay_cash">هل أنت متأكد من رغبتك في الدفع نقدًا؟</string>
+    <string name="health_card">بطاقة التأمين الصحي</string>
+    <string name="are_you_sure_you_want_to_use_this_health_insurance_card">هل أنت متأكد بأنك تريد استخدام بطاقة التأمين الصحي هذه؟</string>
+    <string name="membership_number">رقم العضوية</string>
+    <string name="expiry_date">تاريخ الانتهاء</string>
+    <string name="insurance_provider">شركة التأمين</string>
+    <string name="axa_insurance">تأمين أكسا</string>
+    <string name="policy_number">رقم البوليصة </string>
+    <string name="we_have_not_found_any_upcoming_appointment">لم نجد اي موعد قادم</string>
+    <string name="the_cost_for_this_appt_will_be">تبلغ تكلفة هذا الموعد </string>
+    <string name="you_will_need_a_credit_or_debit_card"> ستحتاج إلى بطاقة ائتمان/مدى للمتابعة.</string>
+    <string name="_continue">متابعة</string>
+    <string name="appointment">الموعد</string>
+    <string name="follow_up_appointments">مواعيد المراجعة </string>
+    <string name="previous_appt_was_on">الموعد السابق كان في </string>
+    <string name="we_have_not_found_any_past_appointment">لم نجد اي موعد مسبق</string>
+    <string name="view_services_and_orders">الاطلاع على الخدمات والطلبات </string>
+    <string name="your_services_amp_orders">خدماتك وطلباتك</string>
+    <string name="find_your_services_and_orders_below">العثور على الخدمات والطلبات أدناه</string>
+    <string name="approved">تمت الموافقة</string>
+    <string name="your_lab_tests">الاختبارات المعمليه الخاصه بك</string>
+    <string name="name">الاسم</string>
+    <string name="order_date">تاريخ الطلب</string>
+    <string name="status">الحاله</string>
+    <string name="you_have_not_any_lab_test">ليس لديك أي تقرير معمل</string>
+    <string name="book_home_visit">حجز زياره للمنزل</string>
+    <string name="get_queue_ticket">احصل على رقم انتظار</string>
+    <string name="cancel_queue_ticket">الغاء رقم الانتظار</string>
+    <string name="radiology">الأشعه</string>
+    <string name="you_have_not_any_radiology_test">ليس لديك اي تقرير اشعه</string>
+    <string name="your_ordered_medications">أدويتك المطلوبة</string>
+    <string name="medication">الأدويه </string>
+    <string name="dosage">الجرعه</string>
+    <string name="you_have_not_any_medication">ليس لديك أي دواء</string>
+    <string name="gps_disable_msg">خدمة تحديد المواقع غير مفعلة في جهازك، هل تريد تفعيلها ؟</string>
+    <string name="enable_gps"></string>
+    <string name="currently_waiting">حاليًا في الإنتظار </string>
+    <string name="pending">في الانتظار </string>
+    <string name="in_review">تحت المراجعة</string>
+    <string name="ordered">مطلوب</string>
+    <string name="cancelled">ملغي</string>
+    <string name="paid">مدفوع</string>
+    <string name="dispensed">مصروف</string>
+    <string name="prepared">معد</string>
+    <string name="declined">مرفوض</string>
+    <string name="awaiting_services">في انتظار الخدمات</string>
+    <string name="service_being_rendered">يتم تقديم الخدمة حاليا</string>
+    <string name="service_signed_off">تم تقديم الخدمة</string>
+    <string name="discontinued">متوقفة</string>
+    <string name="started">تم البدء</string>
+    <string name="completed">مكتملة</string>
+    <string name="verified_and_reported">تم التحقق و التبليغ</string>
+    <string name="sample_collected">تم اخذ العينة</string>
+    <string name="sample_recieved">تم استلام العينة</string>
+    <string name="sample_dispatched">تم تسليم العينة</string>
+    <string name="sample_sent_out">تم ارسال العينة </string>
+    <string name="sample_in_process">العينة تحت المعالجة</string>
+    <string name="need_second_sample">في حاجة عينة اضافية</string>
+    <string name="quantity_not_sufficient">الكمية غير كافية</string>
+    <string name="sample_rejected">العينة مرفوضة</string>
+    <string name="sample_refused">تم الرفض من قبل المريض</string>
+    <string name="created">Created</string>
+    <string name="partialy_paid">Partialy Paid</string>
+    <string name="partialy_approved">موافق عليه جزئيًا</string>
+    <string name="order_a_home_visit">طلب زياره للمنزل</string>
+    <string name="book_your_home_visit_for_lab_test">حجز موعد لسحب العينات في المنزل</string>
+    <string name="your_location">موقعك</string>
+    <string name="search_location">البحث عن الموقع</string>
+    <string name="help_us_to_find_you_on_the_map">ساعدنا لنجدك على الخريطه</string>
+    <string name="address">العنوان</string>
+    <string name="preffered_date_amp_time">التاريخ والوقت المناسب</string>
+    <string name="select_date">اختيار التاريخ</string>
+    <string name="select_time"> الوقت </string>
+    <string name="lab_tests">الاختبارات المعمليه </string>
+    <string name="service">الخدمه</string>
+    <string name="please_select_Address">الرجاء اختيار العنوان</string>
+    <string name="please_select_prefered_date">الرجاء اختيار التاريخ المناسب</string>
+    <string name="please_select_prefered_time">الرجاء اختيار الوقت المناسب</string>
+    <string name="diabetes_program">برنامج السكري</string>
+    <string name="goal_achieved">تحقق الهدف</string>
+    <string name="weight_kg">الوزن</string>
+    <string name="bmi">مؤشر كتله الجسم</string>
+    <string name="ha1c">تحليل السكر التراكمي</string>
+    <string name="goal_9">الهدف 9</string>
+    <string name="home_blood_sugar_hbs">سكر الدم في المنزل</string>
+    <string name="your_bs_is_perfect">مستوى السكر في دمك ممتاز</string>
+    <string name="add_this">اضف هذا </string>
+    <string name="no_date_added">0.0</string>
+    <string name="custion_bs_low">انتبه! مستوى السكر في دمك منخفض</string>
+    <string name="bs_high">انتبه! مستوى السكر في دمك مرتفع </string>
+    <string name="warrior">أنت محارب! استمر!</string>
+    <string name="champion">أنت بطل! تهانينا !</string>
+    <string name="fighter">أنت مقاتل! لنفعلها!</string>
+    <string name="add">اضف</string>
+    <string name="please_enter_20_2600">الرجاء ادخال قيمة تتراوح بين ٢٠ إلى ٢٦٠٠.</string>
+    <string name="reset">اعادة تعيين</string>
+    <string name="enter_email">ادخل بريدك الالكتروني</string>
+    <string name="valid_verification_code">الرجاء ادخال رمز التحقق الصحيح</string>
+    <string name="please_accept_terms_conditions">يرجى قبول الشروط والأحكام.</string>
+    <string name="no_appt_available">لاتوجد أي مواعيد متاحة</string>
+    <string name="you_have_no_services_and_orders_for_this_appoiintment">لايوجد لديك أي خدمات بهذا الموعد</string>
+    <string name="confirm_reschedule">تأكيد وإعادة جدولة الموعد</string>
+    <string name="for_security_reasons_your_national_id_iqama">لأسباب أمنية، لايمكننا عرض معلومات الهوية/البطاقة الوطنية الخاصة بك. إذا كنت ترغب في تحديث هذه المعلومات، يرجى زيارة العيادة.</string>
+    <string name="correct_salutation">الرجاء اختيار اللقب الصحيح</string>
+    <string name="more_info">للمزيد من المعلومات</string>
+    <string name="less_info">إخفاء</string>
+    <string name="today">اليوم</string>
+    <string name="tomorrow">غدا</string>
+    <string name="days">أيام</string>
+    <string name="in">في</string>
+    <string name="no_thanks">لا، شكراً</string>
+    <string name="Are_you_sure_do_you_wish_to_cancel_the_booked">هل أنت متأكد من رغبتك في إلغاء موعدك</string>
+    <string name="queue_ticket">تذكرة.</string>
+    <string name="lab"> مختبر </string>
+    <string name="pharmacy"> صيدلية </string>
+    <string name="pharmacy_msg"> هل تود إلغاء تذكرة انتظار الصيدليه؟ </string>
+    <string name="lab_msg"> هل تود إلغاء تذكرة انتظار المختبر؟ </string>
+    <string name="validate">تأكيد</string>
+    <string name="your_hbs_today">مستوى السكر في دمك لليوم </string>
+    <string name="enter_hbs_value">ادخل مستوى السكر في دمك</string>
+    <string name="national_id1">الإقامة / رقم جواز السفر *</string>
+    <string name="viewall_url">https://www.myclinic.com.sa/ar/doctors-and-services.html</string>
+    <string name="about_us_url">https://www.myclinic.com.sa/ar/about-us.html</string>
+    <string name="dctr_specialist_utl">https://www.myclinic.com.sa/ar/doctors-and-services.html</string>
+    <string name="contact_us_url">https://www.myclinic.com.sa/ar/contact-us.html</string>
+    <string name="relogin">لقد تم تسجيل خروجك أوتوماتيكياً من النظام. من فضلك قم بتسجيل دخولك للمتابعة.</string>
+    <string name="restart_app_etc">يرجى إعادة تشغيل التطبيق ليصبح هذا الإعداد نافذ المفعول.</string>
+    <string name="yes_please">نعم, من فضلك.</string>
+    <string name="email_sent">تم إرسال البريد الإلكتروني</string>
+    <string name="thank_you_if_your_email_is_on_file_we_will_send_you_a_link_to_reset_your_password">شكرا لك، سوف نرسل لك رابط إعادة تعيين كلمة المرور على بريدك الإلكتروني المسجل لدينا</string>
+    <string name="sorry_not_match">عذرا، لايوجد معلومات مطابقة في سجلاتنا . رجاء إعادة المحاولة.</string>
+    <string name="internet_connection">نرجوا منك توصيل جهازك بالانترنت</string>
+    <string name="limit_on_password_6_chars">الرجاء إدخال الحد الأدنى 6 أحرف لكلمة المرور</string>
+    <string name="alpha_num_char">0123456789-_./-+)(,|\#abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="tawnuyia">التعاونية للتأمين</string>
+    <string name="do_not_remind_me_again">لاتذكرني لاحقا</string>
+    <string name="reminder">تذكير!</string>
+    <string name="warningMsg">في حال كنت تعاني من حمى أو عائدًا من السفر أو زرت مدينة القطيف خلال الأسبوعين الماضيين، فإننا نعتذر عن قبول طلبك لأي مواعيد لدى عيادتي في هذا الوقت.
+في حال المتابعة لحجز الموعد وعدم الإفصاح عن تاريخ السفر، سوف نقوم بالامتناع عن تقديم أي خدمات علاجية لك في حال عدم الإفصاح عن ذلك</string>
+
+    <string name="teleAPptBookedmsg">يرجى الذهاب إلى المواعيد القادمة اضغط على "الانضمام" وانتظر حتى يبدأ الطبيب الاجتماع.</string>
+
+    <string name="teleAPptBookedmsgCancel">يرجى ملاحظة أنك لن تكون قادرًا على إلغاء أو إعادة تحديد الموعد المحجوز عبر الإنترنت في غضون 5 دقائق من وقت الموعد</string>
+
+    <string name="appt_booked_successfully_title">تم حجز الموعد بنجاح!</string>
+<!--    <string name="teleAPptBookedmsg">لقد تم حجز الموعد بنجاح!
+
+يرجى العودة لقائمة المواعيد القادمة والضغط على تسجيل الدخول حسب وقت الموعد ثم انتظار مكالمة الطبيب</string>-->
+
+    <string name="cardProblem">عذرًا .يبدو أن هناك مشكله في بطاقتك . يرجي التحقق من التفاصيل مرة أخري أو الاتصال بالمصرف الخاص بك.يمكنك أيضا اختيار طريقة دفع أخري.</string>
+    <string name="this_is_a_kind_reminder">نود تذكيرك بموعدك للاستشارة عن بعد مع </string>
+    <string name="on">في</string>
+    <string name="please_logon_at_that"> .يرجى تسجيل الدخول في نفس وقت الموعد بالذهاب إلى قائمة " المواعيد القادمة" والضغط على "تسجيل الدخول"، وسيقوم الطبيب بمكالمتك. يمكنك استعمال هاتفك فور تسجيل دخولك وسيقوم الطبيب بمكالمتك عندما تكون مستعدًا.</string>
+
+    <string name="test_connection">اختبار الاتصال</string>
+    <string name="leavemsg_waiting_room">هل أنت متأكد من الخروج من غرفة الانتظار؟ في حال مغادرتك، لن يتمكن الطبيب من الاتصال بك</string>
+    <string name="are_you_sure">هل أنت متأكد؟</string>
+    <string name="i_m_flexible_with_my_dates">لا أمانع في حال تم تغيير وقت الموعد الخاص</string>
+    <string name="there_is_no_doctor_available">الجدول الأسبوعي غير متوفر</string>
+    <string name="sorry_request_data">عذرًا، لم نتمكن من إيجاد البيانات المطلوبة. لقد اخترنا لك الموعد التالي المتاح تلقائيًا.</string>
+    <string name="x_not_available">x - غير متاح</string>
+    <string name="green_available">الأخضر-متاح</string>
+    <string name="please_click_on_one_of_the_available_days_below">يرجى الضغط على أحد الأوقات المتاحة في الأسفل.
+</string>
+    <string name="tele_consult">حجز كشف طبي عن بعد</string>
+    <string name="all_doctors">جميع الأطباء
+</string>
+    <string name="no_week_appt_available">لا توجد مواعيد متاحة</string>
+    <string name="instant_live_consultation">Instant Live Consultation</string>
+    <string name="help">للمساعدة</string>
+    <string name="skip">تخطي</string>
+    <string name="book_virtual_consultation">احجز استشارة مرئية</string>
+    <string name="book_a_visit_to_clinic">احجز زيارة للعيادة</string>
+    <string name="expiry_date_in">تاريخ انتهاء الصلاحية في</string>
+    <string name="gregorian">الميلادي</string>
+    <string name="hijri">هجري</string>
+    <string name="text_insurance_confirmation">هل تريد إضافة تأمين؟</string>
+    <string name="text_finish">إنهاء</string>
+    <string name="settings">الإعدادات</string>
+    <string name="patient_digital_id">الرقم التعريفي</string>
+    <string name="change_password">غير كلمة السر</string>
+    <string name="hint_enter_your_old_password">أدخل كلمة المرور القديمة</string>
+    <string name="hint_enter_your_new_password">أدخل كلمة المرور الجديدة</string>
+    <string name="hint_re_enter_your_new_password">أعد إدخال كلمة المرور الجديدة</string>
+
+    <string name="error_enter_password">يرجى إدخال كلمة المرور القديمة</string>
+    <string name="error_new_password">يرجى إدخال كلمة المرور الجديدة</string>
+    <string name="error_repeat_password">كرر كلمة المرور غير متطابقة</string>
+    <string name="error_new_password_invalid">يجب أن تتكون كلمة المرور من ٦ أحرف على الأقل وأن تحتوي على رقم واحد على الأقل.</string>
+
+
+    <string name="text_password_changed">تم تغيير كلمة المرور بنجاح!</string>
+    <string name="search_country">بحث البلد</string>
+    <string name="if_you_need_more_assistance_please_contact_our_call_center_on_92_00_22_811">إذا كنت بحاجة إلى مزيد من المساعدة. يرجى الاتصال بمركز الاتصال على ٩٢ ٠٠ ٢٢ ٨١١</string>
+    <string name="text_poor_internet">اتصال الشبكة ضعيف. يرجى التحقق من اتصالك بالشبكة.</string>
+    <string name="text_calling">الاتصال</string>
+
+    <string name="please_select_clinic">الرجاء تحديد العيادة</string>
+    <string name="company">الموقع</string>
+
+    <string name="text_no_call_us">92 00 22 811</string>
+    <string name="no_card_found">لم يتم العثور على بطاقة</string>
+    <string name="add_new_card">أضف بطاقة جديدة</string>
+    <string name="swipe_left_to_delete_the_card">اسحب لليسار لحذف البطاقة</string>
+    <string name="want_to_save_card">هل تريد حفظ البطاقة؟</string>
+    <string name="delete">احذف</string>
+    <string name="card_number_is_not_valid"> رقم البطاقة غير صالح</string>
+    <string name="please_select_correct_brand">الرجاء تحديد العلامة التجارية الصحيحة</string>
+    <string name="laboratory_reports">تقارير المختبر</string>
+    <string name="radiology_reports">تقارير الأشعة</string>
+    <string name="your_laboratory_reports">تقارير مختبرك</string>
+    <string name="your_radiology_reports">تقارير الأشعة الخاصة بك</string>
+    <string name="date">التاريخ</string>
+    <string name="link">الرابط</string>
+    <string name="please_select_a_view_option">الرجاء تحديد خيار العرض</string>
+    <string name="view_report">عرض التقرير</string>
+    <string name="view_image">عرض الصورة</string>
+    <string name="check_in_eligible">هذا الموعد غير مؤهل لتسجيل الحضور عبر الانترنت، الرجاء التوجة إلى مكتب الاستقبال</string>
+    <string name="a_new_window_will_open_if_you_have_trouble_viewing_your_report_try_refreshing_the_page">لاحظ أن هذه صور عالية الجودة.  إذا كان لديك اتصال ضعيف أو لديك مشكلة في عرض التقرير ، يرجى محاولة تحديث الصفحة.</string>
+    <string name="change_insurance">أضف التأمين</string>
+    <string name="change_insurance_msg">عذرا حسابك ليس لديه تأمين. هل تريد إضافة تأمين جديد؟</string>
+    <string name="change_insurance_success">تم تغيير التأمين بنجاح</string>
+    <string name="add_insurance">إضافة تأمين</string>
+    <!--اللمسة-->
+    <string name="smart_touch">خاصية البصمة الذكية</string>
+    <string name="you_can_now_logon_with_smart_touch_nsimply_go_to_the_settings_menu_to_nenable">يمكنك الآن تسجيل الدخول باستخدام خاصية البصمة الذكية، اذهب إلي الإعدادات لتفعيلها</string>
+    <string name="not_now">ليس الآن</string>
+    <string name="something_went_wrong">هناك خطأ ما. حاول مرة اخرى</string>
+    <string name="enable_smart_touch">تفعيل البصمة الذكية</string>
+    <string name="disable_smart_touch">عطيل خاصية البصمة الذكية</string>
+    <string name="successfully_enabled_touch">لقد قمت بتفعيل خاصيةالبصمة الذكية لتسجيل الدخول بنجاح. يمكنك تعطيل هذه الميزة في أي وقت من خلال قائمه الإعدادت .</string>
+    <string name="disabled_smart_touch">هل أنت متأكد من رغبتك في تعطيل خاصية البصمة الذكية ؟</string>
+    <string name="login_using_your_bio_metric">تسجيل الدخول باستخدام بيانات الاعتماد البيومترية الخاصة بك</string>
+    <string name="join">انضم</string>
+    <string name="pay">الدفع</string>
+    <string name="id">ID</string>
+    <string name="announcements">الإعلانات</string>
+    <string name="zoom_disclaimer">*للعلم وإخلاء المسؤولية:
+سيتم تسجيل هذه المكالمة</string>
+    <string name="zoom_note">ملاحظة:
+يرجى اختيار تفضيلات الصوت والفيديو لهاتفك المحمول من قائمة "الضبط ".
+مع العلم أنه يمكنك تغيير هذه التفضيلات لاحقاً في أي وقت.
+يمكنك أيضاً إيقاف أو تفعيل الصوت/الفيديو مباشرةً أثناء استشاراتك.</string>
+    <string name="zoom_wait">يرجى الانتظار
+قد تستغرق الشبكة دقيقة واحدة للاتصال بالطبيب </string>
+    <string name="find_clinic">ابحث عن العيادة</string>
+
+
+
+    <!--home Screen -->
+    <string name="find_doctor">ابحث عن طبيب</string>
+    <string name="login_register">الدخول/التسجيل</string>
+    <string name="home_services">الخدمات المنزلية</string>
+    <string name="go_back_amp_book_now">الرجوع للخلف و الحجز الآن</string>
+    <string name="month_view_next_30_days">عرض الشهر (30 يوم القادمة)</string>
+    <string name="available_timings">الأوقات المتاحة</string>
+    <string name="morning">الفترة الصباحية</string>
+    <string name="afternoon">فترة مابعد الظهر</string>
+    <string name="evening">الفترة المسائية</string>
+    <string name="reports">التقارير</string>
+    <string name="my_upcoming_appointments">مواعيدي القادمة</string>
+
+
+    <!-- search appointment -->
+    <string name="view_and_select_below_options">يرجى اختيار أحد الخيارات أدناه</string>
+    <string name="search_doctor_speciality_or_location">ادخل اسم الطبيب، التخصص، أو الموقع</string>
+    <string name="search_doctor">البحث بالطبيب أو بالتخصص</string>
+    <string name="your_doctor_fvt_past">مفضلاتك /الأطباء التي تمت زيارتهم</string>
+    <string name="optional">(اختياري)</string>
+    <string name="search_by_speciality">البحث بالتخصص </string>
+    <string name="search_by_doctor">البحث بالطبيب</string>
+    <string name="search_by_location">البحث بالموقع</string>
+    <string name="no_past_visit_found">لا توجد زيارات ماضية</string>
+    <string name="search">ابحث</string>
+    <string name="search_result">نتائج البحث</string>
+    <string name="earliest_availability">اقرب موعد متاح</string>
+    <string name="month_view">عرض الشهر</string>
+    <string name="my_appointment">مواعيدي</string>
+    <string name="confirm_your_appointment">تأكيد الموعد الخاص بك</string>
+    <string name="your_detail">معلوماتك</string>
+    <string name="your_account">حسابك</string>
+    <string name="we_just_need_a_few_details_from_you">يرجى تزويدنا ببعض المعلومات حتى نتمكن من حجز موعدك</string>
+    <string name="we_will_create_account_for_your">اهتماماً منا بتوفير وقتك عند زيارة العيادة، سننشئ حسابًا لك حتى تتمكن من الوصول إلى موعدك  مع إمكانية الدفع وتسجيل الحضور اونلاين</string>
+    <string name="already_have_account">لديك حساب بالفعل؟</string>
+    <string name="sign_in_now">تسجيل الدخول الآن</string>
+    <string name="or_create_account_through">أنشئ حسابك من خلال</string>
+    <string name="confirm_appointment">تأكيد الموعد</string>
+    <string name="my_profile">ملفي الشخصي</string>
+    <string name="contact_us_and_help_visit">تواصلوا معنا او زورونا</string>
+    <string name="faq">الأسئلة الشائعة</string>
+    <string name="earliest_apts">يمكنك البحث عن أقرب موعد متاح من خلال ملئ البيانات التالية ...</string>
+    <string name="view_profile">عرض الملف الشخصي</string>
+
+    <string name="please_select_valid_speciality">يرجى اختيار التخصص الصحيح</string>
+    <string name="please_select_valid_doctor">يرجى اختيار الطبيب الصحيح</string>
+    <string name="find_your_doctor">ابحث عن طبيب</string>
+    <string name="prince_sultan">المحمدية</string>
+    <string name="safa">الصفا</string>
+    <string name="prc">بترو رابغ</string>
+    <string name="dental_title">طب الأسنان</string>
+    <string name="no_earliest_slot_available">لا توجد مواعيد متاحه.</string>
+    <string name="no_earliest_slot_available_check_other_branch">لا توجد مواعيد متاحة ، يرجى التحقق من الفرع الآخر.</string>
+    <string name="no_earliest_slot_available_this_week">لا توجد مواعيد متاحة هذا الأسبوع</string>
+    <string name="no_earliest_slot_available_month">No Earliest Slot Available. Please check below the month view to see doctors schedule</string>
+    <string name="i_am_saudi">أنا سعودي/ة</string>
+
+
+    <string name="material_calendar_monday">ن</string>
+    <string name="material_calendar_tuesday">ث</string>
+    <string name="material_calendar_wednesday">ر</string>
+    <string name="material_calendar_thursday">خ</string>
+    <string name="material_calendar_friday">ج</string>
+    <string name="material_calendar_saturday">س</string>
+    <string name="material_calendar_sunday">ح</string>
+
+    <array name="material_calendar_months_array">
+        <item>يناير</item>
+        <item>شهر فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>مايو</item>
+        <item>يونيه</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>سبتمبر</item>
+        <item>اكتوبر</item>
+        <item>شهر نوفمبر</item>
+        <item>ديسمبر</item>
+    </array>
+
+    <string name="material_calendar_today_button">اليوم</string>
+    <string name="material_calendar_positive_button">نعم</string>
+    <string name="material_calendar_negative_button">يلغي</string>
+    <string name="full_screen">شاشة كاملة</string>
+    <string name="share">مشاركة</string>
+    <string name="please_enter_the_recipient_s_email_address_in_order_to_share_a_link_to_view_the_report">يرجى إدخال عنوان البريد الإلكتروني للمستلم لمشاركة رابط لعرض التقرير.</string>
+    <string name="report_success_msg">تمت مشاركته بنجاح</string>
+    <string name="verification_code_not_received">لم يتم استلام رمز التحقق</string>
+    <string name="see_more">شاهد المزيد...</string>
+
+    <string name="no_schedule_for_next_month">لا يوجد جدول متاح للشهر المقبل</string>
+    <string name="no_schedule_for_this_month">لا يوجد مواعيد للشهر القادم</string>
+    <string name="press_month_view_to_check_the_doctor_schedule">اضغط على عرض الشهر للتحقق من جدول الطبيب.</string>
+    <string name="procedures">Procedures</string>
+    <string name="special_test">Special Test</string>
+
+    <string name="TopUp_Fee_Alert_1">يرجى ملاحظة أن هذا الموعد يتضمن رسومًا إضافية قدرها</string>
+    <string name="TopUp_Fee_Alert_2">إذا كنت ترغب في الاستمرار ، يرجى الضغط على \"نعم\". خلاف ذلك ، حدد \"لا\" للإلغاء.</string>
+
+    <string name="notice">يلاحظ</string>
+    <string name="pay_services">لدفع الخدمات</string>
+    <string name="all_services_and_orders">جميع الخدمات والطلبات</string>
+    <string name="total_amount">المبلغ الإجمالي</string>
+    <string name="please_select_your_service">لرجاء تحديد خدمتك</string>
+    <string name="no_payment_required">لا يتتطلب الدفع</string>
+    <string name="there_are_no_services_to_pay">لا توجد خدمات للدفع</string>
+    <string name="marked_paid_services">أي خدمات متبقية بقيمه 0 ريال سعودي سيتم تمييزها على أنها مدفوعة بمجرد تحديدها</string>
+    <string name="follow_up_note">ملاحظة: إذا كنت ترغب في حجز موعد متابعة يرجى الاتصال بمركز الاتصال</string>
+    <string name="Kindly_enable_your_location_to_conitinue">الرجاء تفعيل موقعك للمتابعة.</string>
+    <string name="you_cannot_check_in">لا يمكنك تسجيل الوصول لأنك بعيد عن العيادة.</string>
+    <string name="You_have_successfully_CheckedIn">لقد تم تسجيل وصولك بنجاح. الرجاء الانتظار في منطقة الانتظار.</string>
+    <string name="please_enable_location_to_confirm">يرجى تفعيل موقعك على هاتفك لتأكيد أنك في العيادة للمتابعة.</string>
+    <string name="please_visit_reception_for_detail_verification">يرجى زيارة مكتب الاستقبال لتسجيل الوصول حيث يجب مراجعة تفاصيل الملف الطبي الخاص بك</string>
+
+    <string name="eligibility_check_message">يُرجى الانتظار حتى نتحقق من أهليتك للتأمين وفقًا للوائح وزارة الصحة. قد تستغرق هذه العملية ما يصل إلى 3 دقائق. ومع ذلك، يمكنك الاستمرار في استخدام التطبيق.</string>
+
+    <string name="one_hour_wait_message">يمكنك تسجيل الوصول قبل ساعة واحدة من موعدك.</string>
+    <string name="check_in_period_expired">انتهت فترة تسجيل الوصول عبر الإنترنت.</string>
+
+    <string name="check_in_available_text">تسجيل الوصول متاح ل</string>
+    <string name="please_press_to_continue">اضغط هنا للمتابعة.</string>
+
+    <string name="appointment_not_available_for_self_check_in">عذرًا، هذا الموعد غير مؤهل لتسجيل الوصول الذاتي. يرجى زيارة مكتب الاستقبال للمتابعة.</string>
+</resources>
+

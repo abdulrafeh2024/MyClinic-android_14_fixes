@@ -1,0 +1,353 @@
+//apply plugin: 'com.android.application'
+//
+//apply plugin: 'kotlin-android'
+//
+//apply plugin: 'kotlin-android-extensions'
+//
+//apply plugin: 'kotlin-kapt'
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+//
+// First repository is for VSee released artifacts.  Others pick up transitive dependencies.
+// To access the VSee bintray repo, you must create a bintray account (it is free) and have
+// us add you to our team.
+//
+repositories {
+    maven {
+        // credentials {
+        // username bintrayUsername
+        // password bintrayApiKey // Please make sure bintray api key is used, not VSee api key nor bintray password
+        // }
+        url 'http://dl.bintray.com/vsee/public'
+        allowInsecureProtocol = true
+    }
+
+    jcenter()
+    google()
+}
+
+android {
+
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+    }
+
+    signingConfigs {
+        config {
+            storeFile file('C:\\Users\\DELL\\OneDrive\\Desktop')
+            keyAlias 'myclinic'
+            storePassword 'password*1'
+            keyPassword 'password*1'
+        }
+    }
+    compileSdkVersion 33
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+
+        applicationId "com.telemedicine.myclinic.myapplication"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 57
+        versionName "1.6.7"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
+    }
+
+
+    useLibrary 'org.apache.http.legacy'
+    flavorDimensions "backend"
+
+    productFlavors {
+
+
+        production {
+            // Assigns this product flavor to the "version" flavor dimension.
+            // This property is optional if you are using only one dimension.
+            dimension "backend"
+            applicationId "com.myclinic.ksa"
+            versionCode 57
+            versionName "1.6.7"
+            buildConfigField 'boolean', 'IS_DEVELOPMENT', "false"
+            buildConfigField 'String', 'BASE_URL', "\"https://bamc.myclinic.com.sa/OS.WebAPI.External/api/OSExternal/\""
+        }
+
+        development {
+            //https://bamc.myclinic.com.sa/OS.WebAPI.External.OSlots/api/OSExternal/
+//https://bamc.myclinic.com.sa/OS.Test.WebAPI.External/api/OSExternal/
+            //http://10.10.105.40/OS.WebAPI.ExternalCS/api/OSExternal/
+            //http://10.10.70.139/OS.WebAPI.External/api/OSExternal/
+            //https://bamc.myclinic.com.sa/OS.Test.WebAPI.ExternalCS/api/OSExternal/
+            //https://dtexweb.myclinic.com.sa/OS.WebAPI.ExternalLabRad/api/OSExternal/
+            //https://dtexweb.myclinic.com.sa/OS.WebAPI.External/api/OSExternal/
+            //https://dtexweb.myclinic.com.sa/OS.WebAPI.External/api/OSExternal/
+            //https://dtexweb.myclinic.com.sa/OS.WebAPI.External.ERB/api/OSExternal/
+            //https://dtexweb.myclinic.com.sa/MultiServices.ProdTest/api/OSExternal/
+            //https://dtexweb.myclinic.com.sa/OS.WebAPI.External.Uberized/api/OSExternal/DriverTrackGet
+            //https://dtexweb.myclinic.com.sa/OS.WebAPI.External.YaqeenTest/api/OSExternal/
+            // versionCode 17
+            // versionName "1.2.2-dev"
+            //add insurance + oslots0
+            dimension "backend"
+            versionCode 57
+            versionName "1.6.7"
+            buildConfigField 'boolean', 'IS_DEVELOPMENT', "true"
+//            buildConfigField 'String', 'BASE_URL', "\"https://bamc.myclinic.com.sa/OS.WebAPI.External/api/OSExternal/\""
+            buildConfigField 'String', 'BASE_URL', "\"https://dtexweb.myclinic.com.sa/OS.WebAPI.External.Uberized/api/OSExternal/\""
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            manifestPlaceholders = [crashlyticsCollectionEnabled:"true"]
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            signingConfig signingConfigs.config
+            ndk {
+                abiFilters "arm64-v8a", "armeabi-v7a"
+            }
+        }
+        debug {
+            manifestPlaceholders = [crashlyticsCollectionEnabled:"false"]
+            debuggable true
+            ndk {
+                abiFilters "arm64-v8a", "armeabi-v7a"
+
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2048M"
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+//, "x86_64", "x86"
+    // If you don't include this section you will get errors due to duplicate files in
+    // 3rd party dependedncies.
+//    packagingOptions {
+//        exclude 'META-INF/LICENSE.txt'
+//        exclude 'META-INF/LICENSE'
+//        exclude 'META-INF/DEPENDENCIES'
+//        exclude 'META-INF/NOTICE'
+//        exclude 'version.properties'
+//        exclude 'META-INF/proguard/androidx-annotations.pro'
+//        pickFirst 'META-INF/*'
+//    }
+
+}
+
+dependencies {
+
+    implementation files('libs\\oppwa.mobile.aar')
+    implementation files('libs\\ipworks3ds_sdk_deploy.aar')
+    //  implementation files('libs\\ipworks3ds_sdk.aar')
+    def lifecycle_version = "2.2.0"
+    def lifecycle_test_version = "2.1.0"
+    def retrofit_version = "2.7.1"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation('androidx.legacy:legacy-support-v4:1.0.0')
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+    //old one
+    //  implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+//    implementation("com.vsee:vsee-kit:1.11.39168@aar") {
+//        transitive = true
+//    }
+    implementation('com.google.firebase:firebase-messaging:21.0.1') {
+        exclude group: 'com.android.support'
+    }
+
+
+    //lottie
+    // implementation 'com.airbnb.android:lottie:3.1.0'
+    implementation 'com.airbnb.android:lottie:4.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    kapt 'com.jakewharton:butterknife-compiler:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation project(':ViewPagerIndicator-Library')
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.github.angads25:toggle:1.1.0'
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    //image picker
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    // implementation 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    implementation 'com.wajahatkarim:EasyFlipView:3.0.3'
+    //network
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation("com.squareup.okhttp3:logging-interceptor:4.2.1")
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.1'
+    //logging
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.0'
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.12'
+    //RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+    implementation 'com.irozon.sneaker:sneaker:2.0.0'
+    implementation 'com.github.nisrulz:validatetor:1.0.0'
+    implementation 'com.reginald:editspinner:1.0.0'
+    implementation 'com.github.vihtarb:tooltip:0.2.0'
+    implementation 'com.github.samkazmi:SimpleImageSelect:1.0'
+    implementation 'gun0912.ted:tedpermission:2.2.2'
+    implementation 'rebus:permission-utils:1.0.4'
+    implementation 'cn.pedant.sweetalert:library:1.3'
+/*    implementation project(':oppwa.mobile-2.37.0')*/
+    //implementation project(':alipaySdk-15.5.9')
+    implementation 'com.google.android.gms:play-services-wallet:16.0.0'
+    implementation 'com.github.marlonlom:timeago:4.0.1'
+    //implementation 'cat.ereza:customactivityoncrash:2.2.0'
+    implementation 'br.com.moip:credit-card-validator:0.0.6'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.5.1'
+    implementation 'com.itlgl:iosdialog:1.0.1'
+    // Replace version with release version, e.g. 1.0.0-alpha, -SNAPSHOT
+
+    // ToxBox setup
+    implementation "com.opentok.android:opentok-android-sdk:2.19.1"
+    implementation 'pub.devrel:easypermissions:0.4.0'
+    //implementation 'com.android.volley:volley:1.1.0'
+
+    //dagger
+    implementation 'com.google.dagger:dagger:2.25.2'
+    kapt 'com.google.dagger:dagger-compiler:2.25.2'
+
+    implementation "androidx.activity:activity-ktx:1.1.0"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // Annotation processorprocessor
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    //extension
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    //google auth service
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+
+    //facebook auth service
+    // implementation 'com.facebook.android:facebook-login:5.15.3'
+    implementation 'com.facebook.android:facebook-login:8.2.0'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:28.4.1')
+
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth'
+
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    //SwipeRevealLayout
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+
+    def biometricLibraryVersion = "1.0.1"
+    implementation "androidx.biometric:biometric:$biometricLibraryVersion"
+
+    // For WorkManager.
+    implementation "androidx.work:work-runtime:2.7.1"
+    implementation "androidx.concurrent:concurrent-futures:1.1.0"
+
+    //  implementation "androidx.work:work-runtime:2.3.1"
+    //implementation "androidx.concurrent:concurrent-futures:1.0.0"
+    // implementation 'com.google.guava:guava:27.0.1-android'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+    /* implementation 'com.github.kizitonwose:CalendarView:<1.0.4>'*/
+/*    // Java language implementation
+    implementation("androidx.biometric:biometric:1.1.0")
+
+implementation 'com.google.guava:guava:27.0.1-android'
+    // Kotlin
+    implementation("androidx.biometric:biometric:1.2.0-alpha04")*/
+
+    implementation 'com.applandeo:material-calendar-view:1.7.0'
+
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+
+    //pinview
+    implementation 'com.chaos.view:pinview:1.4.4'
+
+
+    //calender
+    implementation('net.alhazmy13.hijridatepicker:library:3.0.0') {
+        exclude group: 'androidx.constraintlayout'
+        exclude group: 'com.google.android.material'
+    }
+    implementation group: 'com.github.msarhan', name: 'ummalqura-calendar', version: '1.1.9'
+
+    /* implementation "com.github.lisawray.groupie:groupie:$groupie_version"*/
+
+    implementation 'com.xwray:groupie:2.1.0'
+    implementation 'com.xwray:groupie-kotlin-android-extensions:2.1.0'
+
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation "org.greenrobot:eventbus:3.3.1"
+
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.1'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.maps.android:android-maps-utils:2.2.0'
+
+    implementation project(path: ':mobilertc')
+    implementation project(path: ':commonlib')
+    //  implementation project(path: ':ipworks3ds_sdk')
+    // implementation project(path: ':ipworks3ds_sdk_deploy')
+//    implementation project(path: ':oppwa.mobile')
+}
+//a//pply plugin: 'com.google.gms.google-services'
+
+//com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

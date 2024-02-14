@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.telemedicine.myclinic.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.telemedicine.myclinic.App"
+        android:allowBackup="false"
+        android:appComponentFactory="whateverString"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreenAppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustPan"
+        tools:replace="android:allowBackup ,android:supportsRtl, android:icon ,android:appComponentFactory, android:usesCleartextTraffic">
+
+
+        <activity
+            android:name="com.telemedicine.myclinic.activities.multiservices.ServicesListActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.telemedicine.myclinic.driver.LoginDriverActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.telemedicine.myclinic.driver.TwoStepVerificationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.telemedicine.myclinic.driver.AssignedDeliveriesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.telemedicine.myclinic.activities.AddNewAddressActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+        </activity>
+        <activity
+            android:name="com.telemedicine.myclinic.activities.MedicationDeliveriesActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.telemedicine.myclinic.activities.MyAddressBookActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="${crashlyticsCollectionEnabled}" />
+
+        <activity
+            android:name="com.telemedicine.myclinic.activities.BoardingPassFullScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.FindClinicActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name="com.telemedicine.myclinic.activities.FindDoctorsActivity" />
+        <activity android:name="com.telemedicine.myclinic.activities.ConfirmBookingQuickRegActivity" />
+        <activity android:name="com.telemedicine.myclinic.activities.AppointmentConfirmedAnonymousActivity" />
+        <activity android:name="com.telemedicine.myclinic.activities.BookAppointmentThreesActivity" />
+        <!--
+    <activity
+            android:name="com.telemedicine.myclinic.activities.BoardingPassFullScreenActivity"
+            android:exported="false"></activity>
+        -->
+        <activity
+            android:name="com.telemedicine.myclinic.activities.ContactUsPopActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.AppointmentBookingRegisterActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.AppointmentBottomActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.TimeSlotActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.MonthViewActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name="com.telemedicine.myclinic.activities.NotificationsDetailActivity" />
+        <activity android:name="com.telemedicine.myclinic.activities.NotificationsActivity" />
+        <activity android:name="com.telemedicine.myclinic.activities.AddInsuranceActivity" />
+        <activity android:name="com.telemedicine.myclinic.activities.LaboratoryReportsActivity" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.CardListActivity"
+            android:launchMode="singleTop">
+
+            <!--
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.ZoomMeetingActivity"
+            android:launchMode="singleTop">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.telemedicine.myclinic.activities.SearchAppointmentFilterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.SearchAppointmentResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.ReScheduleApptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.profile.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.profile.AddInsuranceProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.profile.AddProfileInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.profile.AddProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.ConsultantRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.TeleConsultationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.WeekScheduleActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAv-3OjerSZpRFmOlk6GFzumrM04X4vUfU" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.telemedicine.myclinic.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.ForgotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.CompleteRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.SecondRegistrationCompleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.DashBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.UpcomingAppointmentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.PastAppointmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.AppointmentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.ServicesOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.HomeVisitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.BookAppointmentOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.BookAppointmentTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.BookAppointmentThreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.BookAppointmentFourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.DoctorProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.EmailSentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.BoardingPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.OnlinePaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.CenterOfExcellencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.BrowserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.UpdateProfileFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.UpdateProfileSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.BrowserActivityPayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.vseeActivities.WaitingRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.SwitchPatientActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CustomDialog" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.BookAppointmentDialogActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CustomDialog" />
+        <activity
+            android:name=".ApptTermsConditionsActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CustomDialog" />
+        <activity
+            android:name=".ApptTermsSecondConditionsActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/CustomDialog" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.InsuranceCardCashCardActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.telemedicine.myclinic.hyperpay.CustomUIActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="myclinictele" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.oppwa.mobile.connect.service.ConnectService"
+            android:exported="true"
+            tools:ignore="MissingClass" /> <!-- values/styles.xml contains example on how to customize the video/chat theme -->
+        <!--
+ <activity
+            android:name="com.vsee.activity.CallActivity"
+            android:screenOrientation="portrait" />
+        -->
+        <!-- [START firebase_service] -->
+        <service
+            android:name="com.telemedicine.myclinic.firebase.VSeeKitExampleFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <!-- <service android:name="com.telemedicine.myclinic.firebase.VSeeKitExampleFirebaseInstanceIDService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> &lt;!&ndash; [END firebase_iid_service] &ndash;&gt; -->
+        <activity
+            android:name="com.telemedicine.myclinic.activities.PdfViewBrowser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.FollowUpsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.telemedicine.myclinic.toxbox.ToxBoxActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true">
+            <intent-filter>
+                <action android:name="com.telemedicine.myclinic.toxbox.ToxBoxActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.telemedicine.myclinic.activities.MoreInfoActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.FullScreenReport"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.telemedicine.myclinic.activities.PhoneCallActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:theme="@style/FullScreenAppTheme"
+            android:turnScreenOn="true">
+            <intent-filter>
+                <action android:name="com.telemedicine.myclinic.activities.PhoneCallActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Register the Broadcast Receiver -->
+        <receiver
+            android:name="com.telemedicine.myclinic.broadcast.HandleBroadcastReceiver"
+            android:exported="true" />
+
+        <service
+            android:name="com.telemedicine.myclinic.LocalService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.telemedicine.myclinic.AlarmBroadCastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.alarm.receiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.telemedicine.myclinic.localnotification.NotificationPublisher" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false"
+            tools:replace="android:authorities"
+            android:authorities="com.telemedicine.myclinic.myapplication.labProvider">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+
+        </provider>
+
+        <service
+            android:name="com.telemedicine.myclinic.util.LocationService"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <service
+            android:name="com.telemedicine.myclinic.util.AddressFetchService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+           android:exported="true"/>
+
+    </application>
+
+</manifest>

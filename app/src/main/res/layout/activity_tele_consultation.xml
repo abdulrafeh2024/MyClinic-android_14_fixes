@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.telemedicine.myclinic.activities.TeleConsultationActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:id="@+id/instant_live_cons_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="INSTANT LIVE CONSULTATION"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrussianBlue"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.telemedicine.myclinic.views.LightTextView
+        android:id="@+id/sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_appointment"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="See a doctor right now without an appointment"
+        android:textColor="@color/colorPrussianBlue"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/instant_live_cons_title"
+        app:layout_goneMarginTop="20dp" />
+
+    <com.telemedicine.myclinic.views.BoldTextInputLayout
+        android:id="@+id/department_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/top_border_space_white_bg"
+        android:paddingTop="5dp"
+        android:paddingBottom="9dp"
+        app:hintTextAppearance="@style/hintSize11"
+        app:layout_constraintTop_toBottomOf="@+id/sub_title">
+
+        <com.telemedicine.myclinic.views.LightSpinnerEdittext
+            android:id="@+id/select_specialities_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/down_arrow"
+            android:editable="false"
+            android:hint="@string/select_specialty"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="4dp"
+            android:text=""
+            android:textSize="14sp"
+            android:translationY="0dp" />
+
+    </com.telemedicine.myclinic.views.BoldTextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/department_select">
+
+        <LinearLayout
+            android:id="@+id/container_time"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="50"
+            android:background="@color/colorLightGrey"
+            android:layoutDirection="locale"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible">
+
+            <com.telemedicine.myclinic.views.LightTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/watch_time"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Est. wait time"
+                android:textColor="@color/colorPrussianBlue"
+                android:textSize="12sp" />
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/colorPrussianBlue"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_amount"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/container_time"
+            android:layout_weight="50"
+            android:background="@color/colorLightGrey"
+            android:layoutDirection="locale"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible">
+
+            <com.telemedicine.myclinic.views.LightTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/dollar"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Cost"
+                android:textColor="@color/colorPrussianBlue"
+                android:textSize="12sp" />
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/colorPrussianBlue"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/centerOfExcellency"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorLightGrey"
+        android:paddingLeft="20dp"
+        android:paddingTop="25dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <com.telemedicine.myclinic.views.LightButton
+            android:id="@+id/pay_btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:drawableRight="@drawable/right_arrow"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:text="Pay &amp; Start "
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

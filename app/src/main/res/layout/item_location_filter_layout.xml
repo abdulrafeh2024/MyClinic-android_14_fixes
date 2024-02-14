@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingEnd="10dp"
+    android:id="@+id/locationLayout"
+    android:layout_marginEnd="10dp"
+    android:paddingStart="5dp"
+    android:background="@drawable/location_background_selector"
+    android:layout_height="30dp">
+<!--    android:background="@drawable/location_filter_border_blue"-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/locationIcon"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/ic_single_location" />
+
+    <com.telemedicine.myclinic.views.LightTextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:gravity="start"
+        android:visibility="visible"
+        android:paddingBottom="5dp"
+        tools:text="Al Safa"
+        android:textColor="@color/color_dark_blue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

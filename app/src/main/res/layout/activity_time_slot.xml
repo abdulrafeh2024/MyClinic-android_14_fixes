@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="#80000000"
+    android:layoutDirection="locale"
+    tools:context="com.telemedicine.myclinic.activities.TimeSlotActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/monthViewLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:onClick="Hide"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_circle"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/colorGreen"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/monthViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/doctor_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_doctor"
+                        app:civ_border_color="@color/colorGrey"
+                        app:civ_border_width="1dp" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/doctor_info_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@id/doctor_image"
+                        android:orientation="vertical">
+
+
+                        <com.telemedicine.myclinic.views.BoldTextView
+                            android:id="@+id/DateTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:textColor="@color/colorDarkCyan"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="10-11-2021, 04:00 PM" />
+
+                        <com.telemedicine.myclinic.views.BoldTextView
+                            android:id="@+id/doctorName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="start"
+                            android:textColor="@color/color_dark_blue"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="Dr, Sawsan Abduldayem" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/loc"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/ic_single_location" />
+
+                            <com.telemedicine.myclinic.views.LightTextView
+                                android:id="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_toEndOf="@id/loc"
+                                android:gravity="start"
+                                android:paddingBottom="5dp"
+                                android:textColor="@color/color_dark_blue"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:text="Al Safa" />
+
+                            <com.telemedicine.myclinic.views.RegularTextView
+                                android:id="@+id/modify"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:onClick="Hide"
+                                android:text="@string/modify"
+                                android:textColor="@color/colorDarkCyan"
+                                android:textSize="13sp" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/or_set_pass_label"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorLineGrey" />
+
+                <com.telemedicine.myclinic.views.BoldTextView
+                    android:id="@+id/earliest_available_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/available_timings"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/or_set_pass_label"
+                    android:background="@color/colorLineGrey" />
+
+                <!--  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginStart="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:weightSum="4">
+
+                      <com.telemedicine.myclinic.views.LightTextView
+                          android:id="@+id/time1"
+                          android:onClick="onTimeClick"
+                          android:layout_width="80dp"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/grey_border"
+                          android:gravity="center"
+                          android:paddingBottom="8dp"
+                          android:paddingLeft="0dp"
+                          android:layout_weight="1"
+                          android:paddingRight="0dp"
+                          android:paddingTop="8dp"
+                          android:layout_marginStart="5dp"
+                          android:layout_marginEnd="5dp"
+                          android:text="3:50 PM"
+                          android:textColor="@color/black"
+                          android:textSize="11sp" />
+
+
+                      <com.telemedicine.myclinic.views.LightTextView
+                          android:id="@+id/time2"
+                          android:layout_weight="1"
+                          android:layout_width="80dp"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/grey_border"
+                          android:gravity="center"
+                          android:layout_marginStart="5dp"
+                          android:layout_marginEnd="5dp"
+                          android:paddingBottom="8dp"
+                          android:paddingLeft="0dp"
+                          android:paddingRight="0dp"
+                          android:paddingTop="8dp"
+                          android:text="3:50 PM"
+                          android:textColor="@color/black"
+                          android:textSize="11sp" />
+
+
+                      <com.telemedicine.myclinic.views.LightTextView
+                          android:id="@+id/time3"
+                          android:layout_weight="1"
+                          android:layout_width="80dp"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/grey_border"
+                          android:gravity="center"
+                          android:layout_marginStart="5dp"
+                          android:layout_marginEnd="5dp"
+                          android:paddingBottom="8dp"
+                          android:paddingLeft="0dp"
+                          android:paddingRight="0dp"
+                          android:paddingTop="8dp"
+                          android:text="3:50 PM"
+                          android:textColor="@color/black"
+                          android:textSize="11sp" />
+
+
+                      <com.telemedicine.myclinic.views.LightTextView
+                          android:id="@+id/time4"
+                          android:layout_weight="1"
+                          android:layout_width="80dp"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/grey_border"
+                          android:gravity="center"
+                          android:paddingBottom="8dp"
+                          android:paddingLeft="0dp"
+                          android:paddingRight="0dp"
+                          android:layout_marginStart="5dp"
+                          android:layout_marginEnd="5dp"
+                          android:paddingTop="8dp"
+                          android:text="3:50 PM"
+                          android:textColor="@color/black"
+                          android:textSize="11sp" />
+
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:weightSum="4">
+
+                        <com.telemedicine.myclinic.views.LightTextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_border"
+                            android:gravity="center"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="0dp"
+                            android:layout_weight="1"
+                            android:paddingRight="0dp"
+                            android:paddingTop="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="3:50 PM"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+
+                        <com.telemedicine.myclinic.views.LightTextView
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_border"
+                            android:gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp"
+                            android:paddingTop="8dp"
+                            android:text="3:50 PM"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+
+                        <com.telemedicine.myclinic.views.LightTextView
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_border"
+                            android:gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp"
+                            android:paddingTop="8dp"
+                            android:text="3:50 PM"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+
+                        <com.telemedicine.myclinic.views.LightTextView
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_border"
+                            android:gravity="center"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingTop="8dp"
+                            android:text="3:50 PM"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:weightSum="4">
+
+                        <com.telemedicine.myclinic.views.LightTextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_border"
+                            android:gravity="center"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="0dp"
+                            android:layout_weight="1"
+                            android:paddingRight="0dp"
+                            android:paddingTop="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="3:50 PM"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+
+                        <com.telemedicine.myclinic.views.LightTextView
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_border"
+                            android:gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp"
+                            android:paddingTop="8dp"
+                            android:text="3:50 PM"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+
+                        <com.telemedicine.myclinic.views.LightTextView
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_border"
+                            android:gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp"
+                            android:paddingTop="8dp"
+                            android:text="3:50 PM"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+
+                        <com.telemedicine.myclinic.views.LightTextView
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_border"
+                            android:gravity="center"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:paddingTop="8dp"
+                            android:text="3:50 PM"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#F8F8F8"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingStart="15dp"
+                        android:id="@+id/morningLayout"
+                        android:paddingEnd="15dp">
+
+                        <com.telemedicine.myclinic.views.BoldTextView
+                            android:id="@+id/time_title_am"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/morning"
+                            android:textColor="@color/colorConfirmed"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_toEndOf="@+id/time_title_am"
+                            app:srcCompat="@drawable/ic_morning" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/morning_arrow_down"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:rotation="-90"
+                            android:visibility="visible"
+                            android:tint="@color/colorPrimary"
+                            app:srcCompat="@drawable/ic_arrow_left" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/morning_arrow_up"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:rotation="90"
+                            android:tint="@color/colorPrimary"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/ic_arrow_left" />
+
+                    </RelativeLayout>
+
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/exl_type_morning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:el_duration="500"
+                        app:el_expanded="false"
+                        app:el_parallax="0.5">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_time_am"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/time_title_am"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp" />
+
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#F8F8F8"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingStart="15dp"
+                        android:id="@+id/afternoonLayout"
+                        android:paddingEnd="15dp">
+
+                        <com.telemedicine.myclinic.views.BoldTextView
+                            android:id="@+id/time_title_pm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/afternoon"
+                            android:textColor="@color/yellow"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/time_title_pm"
+                            app:srcCompat="@drawable/ic_afternoon" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/afternoon_arrow_down"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:rotation="-90"
+                            android:visibility="visible"
+                            android:tint="@color/colorPrimary"
+                            app:srcCompat="@drawable/ic_arrow_left" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/afternoon_arrow_up"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:rotation="90"
+                            android:tint="@color/colorPrimary"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/ic_arrow_left" />
+
+                    </RelativeLayout>
+
+
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/exl_type_afternoon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:el_duration="500"
+                        app:el_expanded="false"
+                        app:el_parallax="0.5">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_time_pm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/time_title_pm"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:clipToPadding="false" />
+
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#F8F8F8"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingStart="15dp"
+                        android:id="@+id/eveningLayout"
+                        android:paddingEnd="15dp">
+
+                        <com.telemedicine.myclinic.views.BoldTextView
+                            android:id="@+id/time_title_evening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/evening"
+                            android:textColor="@color/color_persian_green"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="27dp"
+                            android:layout_toEndOf="@+id/time_title_evening"
+                            app:srcCompat="@drawable/ic_evening" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/evening_arrow_down"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:rotation="-90"
+                            android:visibility="visible"
+                            android:tint="@color/colorPrimary"
+                            app:srcCompat="@drawable/ic_arrow_left" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/evening_arrow_up"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:rotation="90"
+                            android:tint="@color/colorPrimary"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/ic_arrow_left" />
+
+                    </RelativeLayout>
+
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/exl_type_evening"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:el_duration="500"
+                        app:el_expanded="false"
+                        app:el_parallax="0.5">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_time_evening"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/time_title_pm"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:clipToPadding="false" />
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:progressTint="@color/colorPrimary"
+            android:secondaryProgressTint="@color/colorPrimary"
+            android:scrollbars="none"
+            android:progressBackgroundTint="@color/colorPrimary"
+            android:id="@+id/progress" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

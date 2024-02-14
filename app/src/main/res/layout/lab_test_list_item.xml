@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lab_test_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <com.telemedicine.myclinic.views.EnglishRegularTextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingRight="3dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey" />
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/order_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey" />
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="25"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="0dp"
+            android:text=""
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="15"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/download"
+            android:textColor="@color/colorWhite"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_container"
+        android:background="@color/colorGrey" />
+</LinearLayout>

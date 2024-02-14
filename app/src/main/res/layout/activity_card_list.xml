@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.telemedicine.myclinic.activities.CardListActivity">
+
+    <!--//card one
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/card1"
+        android:layout_height="110dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/blue_card_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:tint="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/master_card" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/regularTextView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.08"
+            android:text="**** **** **** 5555"
+            android:textColor="@color/colorWhite"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
+            app:layout_constraintTop_toTopOf="@+id/appCompatImageView" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/regularTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Expiry Date:"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/regularTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/regularTextView2" />
+
+        <com.telemedicine.myclinic.views.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11/2021"
+            android:layout_marginStart="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/regularTextView3"
+            app:layout_constraintStart_toEndOf="@+id/regularTextView3"
+            app:layout_constraintTop_toTopOf="@+id/regularTextView3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+&lt;!&ndash;card two&ndash;&gt;
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/card2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/dark_card_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:tint="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/visa" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/regularTextView21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.08"
+            android:text="**** **** **** 5555"
+            android:textColor="@color/colorWhite"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageView1"
+            app:layout_constraintTop_toTopOf="@+id/appCompatImageView1" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/regularTextView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Expiry Date:"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/regularTextView21"
+            app:layout_constraintTop_toBottomOf="@+id/regularTextView21" />
+
+        <com.telemedicine.myclinic.views.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11/2021"
+            android:layout_marginStart="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/regularTextView31"
+            app:layout_constraintStart_toEndOf="@+id/regularTextView31"
+            app:layout_constraintTop_toTopOf="@+id/regularTextView31" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    &lt;!&ndash;card three&ndash;&gt;
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/card3"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/golden_card_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:tint="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/master_card" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/regularTextView22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.08"
+            android:text="**** **** **** 5555"
+            android:textColor="@color/colorWhite"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageView2"
+            app:layout_constraintTop_toTopOf="@+id/appCompatImageView2" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/regularTextView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Expiry Date:"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/regularTextView22"
+            app:layout_constraintTop_toBottomOf="@+id/regularTextView22" />
+
+        <com.telemedicine.myclinic.views.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11/2021"
+            android:layout_marginStart="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/regularTextView32"
+            app:layout_constraintStart_toEndOf="@+id/regularTextView32"
+            app:layout_constraintTop_toTopOf="@+id/regularTextView32" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/orange_card_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card3">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView23"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:tint="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/visa" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/regularTextView23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.08"
+            android:text="**** **** **** 5555"
+            android:textColor="@color/colorWhite"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageView23"
+            app:layout_constraintTop_toTopOf="@+id/appCompatImageView23" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/regularTextView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Expiry Date:"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/regularTextView23"
+            app:layout_constraintTop_toBottomOf="@+id/regularTextView23" />
+
+        <com.telemedicine.myclinic.views.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11/2021"
+            android:layout_marginStart="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/regularTextView33"
+            app:layout_constraintStart_toEndOf="@+id/regularTextView33"
+            app:layout_constraintTop_toTopOf="@+id/regularTextView33" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_marginTop="480dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        tools:listitem="@layout/item_payment_card_layout"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <com.telemedicine.myclinic.views.BoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardEmptyPlaceholder"
+        android:text="@string/no_card_found"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/add_card_button_bg"
+        android:padding="5dp"
+        android:tint="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/boldTextView"
+        app:layout_constraintEnd_toEndOf="@+id/boldTextView"
+        app:layout_constraintStart_toStartOf="@+id/boldTextView"
+        app:srcCompat="@drawable/plus" />
+
+    <com.telemedicine.myclinic.views.BoldTextView
+        android:id="@+id/boldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/add_new_card"
+        android:textColor="@color/black_trans"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/regularTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:id="@+id/regularTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/swipe_left_to_delete_the_card"
+        android:textColor="@color/colorBrightGrey"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/service_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0185"
+            android:textSize="14sp" />
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/service_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/service_number"
+            android:text="Consultation"
+            android:textSize="14sp" />
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:text="Insurance / 100 SAR"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.telemedicine.myclinic.views.BoldTextView
+        android:id="@+id/other_services_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/special_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrussianBlue"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/other_services_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grey_border"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/other_services_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:weightSum="100">
+
+        <com.telemedicine.myclinic.views.BoldTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="14sp" />
+
+        <com.telemedicine.myclinic.views.BoldTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="@string/status"
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

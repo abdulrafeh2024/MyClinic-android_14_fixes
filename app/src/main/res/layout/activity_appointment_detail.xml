@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    tools:context="com.telemedicine.myclinic.AppointmentDetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/register_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/container_appoint_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layoutDirection="locale"
+                android:orientation="horizontal">
+
+                <com.telemedicine.myclinic.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/appointment"
+                    android:textColor="@color/colorPrussianBlue"
+                    android:textSize="16sp" />
+
+                <com.telemedicine.myclinic.views.RegularTextView
+                    android:id="@+id/apptTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="in 4 Days"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/doctor_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/container_appoint_title"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/doctr"
+                app:civ_border_color="@color/colorGrey"
+                app:civ_border_width="2dp" />
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Dr . Sawsan Abdul Dayem"
+                android:textColor="@color/colorPrussianBlue"
+                android:textSize="14sp" />
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrussianBlue"
+                android:textSize="14sp"
+                tools:text="Al Safa" />
+
+            <com.telemedicine.myclinic.views.LightTextView
+                android:id="@+id/doctor_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/company_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Obstetrics &amp; Gynecology Specialist"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <com.telemedicine.myclinic.views.LightTextView
+                android:id="@+id/dateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_profession"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="General Fever"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <com.telemedicine.myclinic.views.LightTextView
+                android:id="@+id/visit_reception_error_tv"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_below="@+id/dateTime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/appointment_not_available_for_self_check_in"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/visit_reception_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/visit_reception_error_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="45dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/check_in_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/visit_reception"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/checkin_online"
+                    app:tint="@color/white" />
+
+                <com.telemedicine.myclinic.views.LightTextView
+                    android:id="@+id/check_in_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="@string/check_in"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toEndOf="@+id/check_in_img"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.telemedicine.myclinic.views.LightTextView
+                    android:id="@+id/visit_reception"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Check-in online period expired."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/check_in_img"
+                    app:layout_constraintTop_toBottomOf="@+id/check_in_tv" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/visit_reception_layout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorLightGrey"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <com.telemedicine.myclinic.views.LightButton
+                    android:id="@+id/pay_online"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:drawablePadding="23dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/pay_online"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <com.telemedicine.myclinic.views.LightButton
+                    android:id="@+id/self_checkin"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pay_online"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:drawablePadding="23dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/self_checkin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+
+                <View
+                    android:id="@+id/self_check_in_loading"
+                    android:layout_width="220dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimary"
+                    android:gravity="start|center_vertical"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/self_checkin_progress"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateTint="@color/white"
+                    android:progress="10"
+                    android:visibility="invisible" />
+
+
+                <com.telemedicine.myclinic.views.LightButton
+                    android:id="@+id/add_calendar"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/self_checkin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableRight="@drawable/grey_right_arrow"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/add_to_calendar"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <com.telemedicine.myclinic.views.LightButton
+                    android:id="@+id/reschedule"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_calendar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorWhite"
+                    android:drawableRight="@drawable/grey_right_arrow"
+                    android:drawablePadding="20dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/reschedule"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBrightGrey"
+                    android:textSize="14sp" />
+
+                <com.telemedicine.myclinic.views.LightButton
+                    android:id="@+id/changeInsurance"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reschedule"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorWhite"
+                    android:drawableRight="@drawable/grey_right_arrow"
+                    android:drawablePadding="20dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/change_insurance"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBrightGrey"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <com.telemedicine.myclinic.views.LightButton
+                    android:id="@+id/cancel"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/changeInsurance"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorWhite"
+                    android:drawableRight="@drawable/grey_right_arrow"
+                    android:drawablePadding="10dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/cancel_booking"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBrightGrey"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

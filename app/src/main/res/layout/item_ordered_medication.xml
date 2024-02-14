@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/list_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:weightSum="2">
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/name_medication"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            tools:text="Lactobacillus Capsule"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <com.telemedicine.myclinic.views.RegularTextView
+            android:id="@+id/name_dosage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            tools:text="2 cap once daily per oral for 30days"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGrey" />
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+<!--        <item name="colorPrimary">@color/red_btn_bg_color</item>-->
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/colorGrey</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/colorAccent</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/colorAccent</item>    <!--days of the week-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullScreenAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="textInputStyle">@style/Widget.Design.TextInputLayout</item>
+        <item name="android:windowAnimationStyle">@style/YourAnimation.Activity</item>
+
+    </style>
+
+    <style name="FullScreenAppThemeAr" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="textInputStyle">@style/Widget.Design.TextInputLayout</item>
+        <item name="android:windowAnimationStyle">@style/YourAnimation.ActivityAR</item>
+
+    </style>
+
+
+    <style name="FullScreenAppTheme1" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="textInputStyle">@style/Widget.Design.TextInputLayout</item>
+        <item name="android:windowAnimationStyle">@style/YourAnimation.Activity</item>
+
+    </style>
+
+    <style name="FullScreenAppThemeAr1" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="textInputStyle">@style/Widget.Design.TextInputLayout</item>
+        <item name="android:windowAnimationStyle">@style/YourAnimation.ActivityAR</item>
+
+    </style>
+
+    <style name="YourAnimation.Activity" parent="@android:style/Animation.Activity">
+<!--        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>-->
+<!--        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>-->
+<!--        <item name="android:activityCloseEnterAnimation">@android:anim/slide_in_left</item>-->
+<!--        <item name="android:activityCloseExitAnimation">@android:anim/slide_out_right</item>-->
+
+        <item name="android:activityOpenEnterAnimation">@anim/open_next</item>
+        <item name="android:activityOpenExitAnimation">@anim/close_main</item>
+        <item name="android:activityCloseEnterAnimation">@anim/open_main</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_next</item>
+
+    </style>
+
+    <style name="YourAnimation.ActivityAR" parent="@android:style/Animation.Activity">
+<!--        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>-->
+<!--        <item name="android:activityOpenExitAnimation">@android:anim/slide_out_right</item>-->
+<!--        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>-->
+<!--        <item name="android:activityCloseExitAnimation">@anim/slide_out_left</item>-->
+        <item name="android:activityOpenEnterAnimation">@anim/open_next_ar</item>
+        <item name="android:activityOpenExitAnimation">@anim/close_main_ar</item>
+        <item name="android:activityCloseEnterAnimation">@anim/open_main_ar</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_next_ar</item>
+
+
+    </style>
+
+    <style name="hintSize" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="hintSize11" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@color/black_trans</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+
+<!--    <style name="CustomDialog" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">-->
+<!--        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="28">shortEdges</item>-->
+<!--        &lt;!&ndash;<item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>&ndash;&gt;-->
+<!--    </style>-->
+
+    <style name="CustomDialog" parent="Theme.MaterialComponents.Light.Dialog.Bridge">
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="28">shortEdges</item>
+        <!--<item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>-->
+    </style>
+
+    <style name="redHint" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/colorred</item>
+        <item name="android:textColorPrimary">@color/colorred</item>
+        <item name="android:textColor">@color/colorred</item>
+        <item name="colorAccent">@color/colorred</item>
+
+    </style>
+
+    <style name="primaryHint" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="NewDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="appDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+</resources>

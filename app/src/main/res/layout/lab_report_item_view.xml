@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/dateLab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingEnd="1dp"
+            android:paddingTop="5dp"
+            tools:text="02-06-2021"
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="9sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey" />
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/nameLab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingStart="2dp"
+            android:paddingTop="5dp"
+            tools:text="X-rays"
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="9sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey" />
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/doctorLab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingStart="2dp"
+            android:paddingTop="5dp"
+            tools:text="X-rays"
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="9sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey" />
+
+        <com.telemedicine.myclinic.views.LightTextView
+            android:id="@+id/specialityLab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingStart="2dp"
+            android:paddingTop="5dp"
+            tools:text="ENT"
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="9sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginBottom="10dp"
+          android:layout_marginTop="10dp"
+          android:gravity="center"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_gravity="center"
+          android:layout_weight="1">
+
+          <ImageView
+              android:id="@+id/share"
+              android:layout_width="35dp"
+              android:layout_height="35dp"
+              android:visibility="gone"
+              android:paddingBottom="3dp"
+              android:paddingTop="3dp"
+              android:src="@drawable/share" />
+
+          <ImageView
+              android:id="@+id/download"
+              android:layout_width="30dp"
+              android:layout_height="25dp"
+              android:background="@color/colorPrimary"
+              android:visibility="visible"
+              android:layout_marginTop="5dp"
+              android:paddingBottom="3dp"
+              android:paddingTop="3dp"
+              android:src="@drawable/download" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_container"
+        android:background="@color/colorGrey" />
+</LinearLayout>

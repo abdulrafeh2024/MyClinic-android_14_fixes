@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lab_test_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:weightSum="100">
+
+        <com.telemedicine.myclinic.views.EnglishRegularTextView
+            android:id="@+id/service_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="Service"
+            android:textColor="@color/colorPrussianBlue"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:weightSum="49">
+
+            <com.telemedicine.myclinic.views.EnglishRegularTextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="Name"
+                android:textColor="@color/colorPrussianBlue"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_container"
+
+        android:background="@color/colorGrey" />
+</LinearLayout>

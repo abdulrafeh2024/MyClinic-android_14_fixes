@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#003868</color>
+    <color name="colorPrimaryDisbale">#90003868</color>
+    <color name="colorPrimaryDark">#008C99</color>
+    <color name="colorAccent">#003868</color>
+    <color name="colorGreen">#3DCD1D</color>
+    <color name="colorred">#FF0000</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreyAlpha">#90DFE0E2</color>
+    <color name="colorGreyAlphaLight">#40d3d3d3</color>
+    <color name="white_transparent">#B3ffffff</color>
+
+    <color name="colorLineGrey">#DADADA</color>
+    <color name="colorGrey">#DFE0E2</color>
+    <color name="colorGrey2">#D0D1D3</color>
+    <color name="colorGrey3">#797C82</color>
+    <color name="colorDarkCyan">#008C99</color>
+    <color name="colorAquaSpring">#E6FFE4</color>
+    <color name="colorPrussianBlue">#002A4D</color>
+    <color name="colorGreyIndicator">#979797</color>
+    <color name="black">#000000</color>
+    <color name="black_trans">#99000000</color>
+    <color name="colorLightGrey">#E6E7E9</color>
+    <color name="colorBrightGrey">#979797</color>
+    <color name="colorConfirmed">#70C568</color>
+    <color name="blue">#00ADEC</color>
+    <color name="yellow">#FEAA38</color>
+    <color name="publisher_border_color">#FFFFFF</color>
+    
+    <color name="color_dark_blue">#023867</color>
+    <color name="color_persian_green">#008C99</color>
+</resources>

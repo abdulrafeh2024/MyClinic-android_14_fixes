@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/toolbar_left_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/back_btn" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_toolbar" />
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/refresh_x" />
+
+    <com.telemedicine.myclinic.views.BoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/id"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/patientRId"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/refresh"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rounded_blue_circle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorLightGrey" />
+
+</RelativeLayout>

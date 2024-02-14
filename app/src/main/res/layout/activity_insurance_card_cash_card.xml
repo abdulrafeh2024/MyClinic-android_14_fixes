@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_trans"
+    tools:context="com.telemedicine.myclinic.activities.InsuranceCardCashCardActivity">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/close_circle" />
+
+    <ImageView
+        android:id="@+id/insurance_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/plus_box_outline"
+        app:tint="@color/colorWhite" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_below="@id/insurance_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:text="@string/add_insurance"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/insurance_cash_payment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/close"
+        android:layout_marginTop="25dp"
+        android:clipToPadding="false" />
+
+    <RelativeLayout
+        android:id="@+id/payment_by_cash_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="0dp"
+        android:layoutDirection="ltr"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/rectangle_white_bg"
+            android:layoutDirection="ltr"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+
+            <com.telemedicine.myclinic.views.RegularTextView
+                android:id="@+id/title_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="@string/cash"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.telemedicine.myclinic.views.LightTextView
+                android:id="@+id/warning_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_cash"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/are_you_sure_you_wish_to_pay_cash"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.telemedicine.myclinic.views.LightButton
+                android:id="@+id/yes_pay_cash"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/warning_title"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:drawableRight="@drawable/right_arrow"
+                android:drawablePadding="23dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="15dp"
+                android:text="@string/select"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/swipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_wallet">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/wallet" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

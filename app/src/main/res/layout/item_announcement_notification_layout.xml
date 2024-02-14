@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:id="@+id/notificationView"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/notification_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toTopOf="@id/lineView">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/notification_mic"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="4dp"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_announcements"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/notification_mic"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical">
+
+            <com.telemedicine.myclinic.views.BoldTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Ramadan Mubarak"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorPrussianBlue"
+                android:textSize="15sp" />
+
+
+            <com.telemedicine.myclinic.views.RegularTextView
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                tools:text="Hi I am Usman, Your Android Developer, How can i help you?By develoing Android Applicaiton"
+                android:textColor="@color/colorPrimaryDisbale"
+                android:textSize="12sp" />
+
+            <com.telemedicine.myclinic.views.RegularTextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doctor_profession"
+                android:layout_marginTop="10dp"
+                tools:text="3 hours ago"
+                android:textColor="@color/colorGrey3"
+                android:textSize="11sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/lineView"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/colorGrey2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

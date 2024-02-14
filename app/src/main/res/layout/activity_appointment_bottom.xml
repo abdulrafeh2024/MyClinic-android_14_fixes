@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="#80000000"
+    android:layoutDirection="locale"
+    android:onClick="Hide"
+    tools:context="com.telemedicine.myclinic.activities.AppointmentBottomActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:paddingStart="20dp"
+                android:orientation="vertical"
+                android:paddingEnd="20dp">
+
+                <com.telemedicine.myclinic.views.BoldTextView
+                    android:id="@+id/or_set_pass_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/my_appointment"
+                    android:textColor="@color/colorPrussianBlue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/or_set_pass_label"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/colorLineGrey" />
+
+                <!-- upcoiming appointments -->
+                <RelativeLayout
+                    android:id="@+id/upcoming_rltv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line0"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="15dp">
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:id="@+id/upcoming_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:drawableEnd="@drawable/grey_right_arrow"
+                        android:drawablePadding="5dp"
+                        android:textAllCaps="true"
+                        android:gravity="center|start"
+                        android:text="@string/upcoming_appointments"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:id="@+id/upcoming_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="45dp"
+                        android:layout_marginStart="45dp"
+                        android:background="@drawable/circle_bg"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line0"
+                    android:paddingTop="10dp"
+                    android:id="@+id/past_rltv"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="15dp">
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:id="@+id/past_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:drawableEnd="@drawable/grey_right_arrow"
+                        android:drawablePadding="5dp"
+                        android:textAllCaps="true"
+                        android:gravity="center|start"
+                        android:text="@string/past_appointments"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/pastCount"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="45dp"
+                        android:layout_marginStart="45dp"
+                        android:background="@drawable/circle_bg"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line0"
+                    android:paddingTop="10dp"
+                    android:id="@+id/centerOfExcellency"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="15dp">
+
+                    <com.telemedicine.myclinic.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:drawableEnd="@drawable/grey_right_arrow"
+                        android:drawablePadding="5dp"
+                        android:textAllCaps="true"
+                        android:gravity="center|start"
+                        android:text="@string/centre_of_excellence"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.telemedicine.myclinic.views.BoldTextView
+        android:id="@+id/companyEnTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrussianBlue"
+        app:layout_constraintEnd_toStartOf="@+id/cityEnTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Prince Sultan" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:id="@+id/cityEnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Jeddah" />
+
+    <com.telemedicine.myclinic.views.BoldTextView
+        android:id="@+id/companyArTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/colorPrussianBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cityArTextView"
+        app:layout_constraintTop_toBottomOf="@+id/companyEnTextView"
+        tools:text="لأمير سلطان" />
+
+    <com.telemedicine.myclinic.views.RegularTextView
+        android:id="@+id/cityArTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyEnTextView"
+        tools:text="جِدَّة" />
+</androidx.constraintlayout.widget.ConstraintLayout>

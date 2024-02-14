@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="#80000000"
+    android:layoutDirection="locale"
+    tools:context="com.telemedicine.myclinic.activities.MonthViewActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/monthViewLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_circle"
+        android:gravity="center"
+        android:onClick="Hide"
+        android:text="X"
+        android:textColor="@color/colorGreen"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/monthViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/doctor_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/doctr"
+                        app:civ_border_color="@color/colorGrey"
+                        app:civ_border_width="1dp" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/doctor_info_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@id/doctor_image"
+                        android:orientation="vertical">
+
+                        <com.telemedicine.myclinic.views.BoldTextView
+                            android:id="@+id/DateTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            tools:text="20-07-2022, 1:00 PM"
+                            android:textColor="@color/colorDarkCyan"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.telemedicine.myclinic.views.BoldTextView
+                            android:id="@+id/doctorName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="start"
+                            tools:text="Dr. Mohamed Abbass"
+                            android:textColor="@color/color_dark_blue"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:id="@+id/location_layout">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/ic_single_location" />
+
+                            <com.telemedicine.myclinic.views.LightTextView
+                                android:id="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="3dp"
+                                android:gravity="start"
+                                android:paddingBottom="5dp"
+                                tools:text="Al Safa"
+                                android:textColor="@color/color_dark_blue"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/or_set_pass_label"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorLineGrey" />
+
+
+                <com.telemedicine.myclinic.views.BoldTextView
+                    android:id="@+id/earliest_available_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layoutDirection="locale"
+                    android:textDirection="locale"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/month_view_next_30_days"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/or_set_pass_label"
+                    android:background="@color/colorLineGrey" />
+
+                <com.applandeo.materialcalendarview.CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="@color/colorPrimary"
+                    app:selectionColor="@color/colorPrimary"
+                    app:selectionLabelColor= "@color/colorWhite"
+                    app:highlightedDaysLabelsColor="@color/colorGreen"
+                    app:daysLabelsColor="@color/colorGrey"
+                    app:type="one_day_picker" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:progressTint="@color/colorPrimary"
+            android:secondaryProgressTint="@color/colorPrimary"
+            android:scrollbars="none"
+            android:progressBackgroundTint="@color/colorPrimary"
+            android:id="@+id/progress" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

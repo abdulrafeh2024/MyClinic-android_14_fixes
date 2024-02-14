@@ -1,0 +1,125 @@
+{
+  "project_info": {
+    "project_number": "922304098427",
+    "firebase_url": "https://my-clinic-f71c1.firebaseio.com",
+    "project_id": "my-clinic-f71c1",
+    "storage_bucket": "my-clinic-f71c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922304098427:android:85b7d4b26c22b484e332de",
+        "android_client_info": {
+          "package_name": "com.myclinic.ksa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922304098427-3gdnn1mjaejlejk0o75g9gek7spamgal.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myclinic.ksa",
+            "certificate_hash": "58bbc1a615ed86e9ed75f8f07e75a7599991926b"
+          }
+        },
+        {
+          "client_id": "922304098427-jh8ftgpupr9m3tkk6jk4pje98b8io705.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myclinic.ksa",
+            "certificate_hash": "3ce6a05b7bdc3500fc059d92d30d188e09f9a102"
+          }
+        },
+        {
+          "client_id": "922304098427-mc439ebn1nv48m1bh4sor5md25vhiula.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myclinic.ksa",
+            "certificate_hash": "a508813baa5ea539b46b5212159d35638910a153"
+          }
+        },
+        {
+          "client_id": "922304098427-qeuc3vtndvd3leu5jcqjp2h6266vec2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv-3OjerSZpRFmOlk6GFzumrM04X4vUfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922304098427-qeuc3vtndvd3leu5jcqjp2h6266vec2i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "922304098427-74nkicqqj1l9n2rpc8rck8olk25qa3jj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.clinic.myclinic",
+                "app_store_id": "1475630623"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922304098427:android:6e8dfa016c311ef5e332de",
+        "android_client_info": {
+          "package_name": "com.telemedicine.myclinic.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922304098427-dklbfam3gm2e3afsj214odio1a6si1ga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.telemedicine.myclinic.myapplication",
+            "certificate_hash": "58bbc1a615ed86e9ed75f8f07e75a7599991926b"
+          }
+        },
+        {
+          "client_id": "922304098427-mircg2r62n43a57krvgrbqd5i4sk0973.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.telemedicine.myclinic.myapplication",
+            "certificate_hash": "a508813baa5ea539b46b5212159d35638910a153"
+          }
+        },
+        {
+          "client_id": "922304098427-qeuc3vtndvd3leu5jcqjp2h6266vec2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv-3OjerSZpRFmOlk6GFzumrM04X4vUfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922304098427-qeuc3vtndvd3leu5jcqjp2h6266vec2i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "922304098427-74nkicqqj1l9n2rpc8rck8olk25qa3jj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.clinic.myclinic",
+                "app_store_id": "1475630623"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
