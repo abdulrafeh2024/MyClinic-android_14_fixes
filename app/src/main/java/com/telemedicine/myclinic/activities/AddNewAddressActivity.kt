@@ -215,6 +215,7 @@ class AddNewAddressActivity : BaseActivity(), OnMapReadyCallback {
                             Log.e("PlaceDetails", "Failed to fetch place details: $exception")
                         }
                 }
+                //hjiiu
             }
             .addOnFailureListener { exception ->
                 Log.e("Autocomplete", "Autocomplete query failed: $exception")
